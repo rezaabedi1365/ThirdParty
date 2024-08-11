@@ -1,0 +1,34 @@
+1. Add the following line to your hosts file (Windows\System32\Drivers\etc\hosts) to prevent
+MDaemon from connecting to Alt-N.
+
+127.13.37.127		services.altn.com
+127.13.37.127		services.mdaemon.com
+
+2. Start installation and continue as prompted.
+
+3. Choose 'I already have a registration key'. You can use SSG's keygen to get a key, I'll use the one bellow.
+
+Registration key: CXYLHEE-EQJHQEN-LIJGFEY
+
+4. When you click next the installer tries to connect to Alt-N and verify you registration key.
+Which obviously it can't and therefore gives you an error. At this point "Next >" button is disabled
+and you cannot continue the installation process.
+
+5. Run 'Windows Enabler' from Crack directory as *administrator*. It's a nice and little tool that allows
+you to enable a disabled grayed out button for you. When you run it, it goes to system tray and by default
+is not turned on. You need to click the tray icon to turn it on. When you turned it on, you just need to
+click on the 'Next >' button and Windows Enabler changes the button to enabled state which in turn allows
+you to continue the installation without Alt-N verifying your registration key. You can exit Windows Enabler now
+by right clicking its tray icon and choosing Quit, since you won't be needing it anymore.
+
+6. When installation is complete, uncheck 'Start MDaemon' and click 'Finish >'.
+
+7. copy 'MDaemon' folder from Crack directory to 'C:\' and replace the files.
+
+8. Copy 'LocalData.ini' from Crack directory to 'C:\MDaemon\LocalData'. Replace if there is already a file with that name.
+
+9. Copy 'license.xml' to 'C:\MDaemon\License'.
+
+10. Edit 'license.xml' and put your PCID in that file. You can find your PCID in 'license_request.xml'.
+
+11. Now you can open start menu and start MDaemon.
