@@ -20,6 +20,7 @@
                  * users
                  * user pair
               - Reaction
+                 * Block
         + Data Protection
            * Removable Storage Protection
               - conditioin : copy outgoing / incoming
