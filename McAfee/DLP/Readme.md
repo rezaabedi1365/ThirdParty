@@ -10,3 +10,20 @@
 
 ![image](https://github.com/user-attachments/assets/2f9c0318-6013-4f65-b5a5-6fc5edbce434)
 
+- policy
+    * Policy Catalog
+        - Device Control
+           * Deny Bluetoth/DC-DVD/usb-flass/Floppy/Infrared/Mobile/Modem/PocketPc/Scanner&Camera/Wireless/GSM Modem
+              - Condition
+              - Exeption
+                 * serial 
+                 * users
+                 * user pair
+              - Reaction
+        - Data Protection
+        - Application Control
+    * Policy Assignment
+    * Policy Assignment Rules
+    * Policy History
+    * Policy Comprarison
+       
