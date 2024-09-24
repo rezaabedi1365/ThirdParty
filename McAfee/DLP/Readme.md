@@ -12,7 +12,7 @@
 
 - policy
     * Policy Catalog
-        - Device Control
+        + Device Control
            * Deny Bluetoth/DC-DVD/usb-flass/Floppy/Infrared/Mobile/Modem/PocketPc/Scanner&Camera/Wireless/GSM Modem
               - Condition
               - Exeption
@@ -20,8 +20,8 @@
                  * users
                  * user pair
               - Reaction
-        - Data Protection
-        - Application Control
+        + Data Protection
+        + Application Control
     * Policy Assignment
     * Policy Assignment Rules
     * Policy History
