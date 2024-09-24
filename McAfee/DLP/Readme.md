@@ -21,6 +21,15 @@
                  * user pair
               - Reaction
         + Data Protection
+           * Removable Storage Protection
+              - conditioin : copy outgoing / incoming
+              - Reaction : report incident / store original file as evidence
+           * Network Share Protection
+           * Screen Capture Protection
+           * web protection
+           * Clipboard protection
+           * email protection
+           * 
         + Application Control
     * Policy Assignment
     * Policy Assignment Rules
