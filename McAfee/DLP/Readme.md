@@ -30,9 +30,9 @@
            * Clipboard protection
            * email protection
         + Application Control
-  ![image](https://github.com/user-attachments/assets/08d6ca24-bfb5-4352-b7c6-64374766d877)
+   ![image](https://github.com/user-attachments/assets/08d6ca24-bfb5-4352-b7c6-64374766d877)
 
-  ![image](https://github.com/user-attachments/assets/04370ca3-5b21-4a8e-ab3e-95d3030eef09)
+   ![image](https://github.com/user-attachments/assets/04370ca3-5b21-4a8e-ab3e-95d3030eef09)
 
     * Policy Assignment
     * Policy Assignment Rules
