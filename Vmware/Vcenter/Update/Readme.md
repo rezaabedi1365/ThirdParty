@@ -14,3 +14,13 @@
 ## Reduced Downtime Upgrade
 - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vcenter-upgrade/GUID-5A9967E2-A8EC-4344-99BE-B5CB92C09E8A.html
 - https://knowledge.broadcom.com/external/article/313288/vcenter-server-upgrades-with-the-reduced.html
+upgrade in command-line
+
+    Attach the VMware-vCenter-Server-Appliance-6.x-patch-FP.iso file to vCenter Server Appliance CD or DVD drive.
+    Log in to the appliance shell as root and run the commands given below:
+        To stage the ISO:
+        software-packages stage --iso
+        To see the staged content:
+        software-packages list --staged
+        To install the staged rpms:
+        software-packages install --staged
