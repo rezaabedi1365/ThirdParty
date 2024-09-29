@@ -16,11 +16,11 @@
 - https://knowledge.broadcom.com/external/article/313288/vcenter-server-upgrades-with-the-reduced.html
 upgrade in command-line
 
-    Attach the VMware-vCenter-Server-Appliance-6.x-patch-FP.iso file to vCenter Server Appliance CD or DVD drive.
-    Log in to the appliance shell as root and run the commands given below:
-        To stage the ISO:
+- Attach the VMware-vCenter-Server-Appliance-6.x-patch-FP.iso file to vCenter Server Appliance CD or DVD drive.
+- Log in to the appliance shell as root and run the commands given below:
+1- To stage the ISO:
         software-packages stage --iso
-        To see the staged content:
+2- To see the staged content:
         software-packages list --staged
-        To install the staged rpms:
+3- To install the staged rpms:
         software-packages install --staged
