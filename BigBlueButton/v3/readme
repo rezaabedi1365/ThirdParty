@@ -1,7 +1,11 @@
+document:
+  https://docs.bigbluebutton.org/3.0/new-features/
+  https://docs.bigbluebutton.org/3.0/administration/install/
+
+
 giuhub
 https://github.com/bigbluebutton/bbb-install/blob/v3.0.x-release/bbb-install.sh
   wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v3.0.x-release/bbb-install.sh | bash -s -- -w -v jammy-300 -s bbb.example.com -e info@example.com
 
-document:
-  https://docs.bigbluebutton.org/3.0/new-features/
-  https://docs.bigbluebutton.org/3.0/administration/install/
+
+https://docs.docker.com/engine/install/ubuntu/
