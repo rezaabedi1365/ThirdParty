@@ -5,3 +5,6 @@ https://docs.bigbluebutton.org/administration/install/
 github:
 https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com
+
+docker:
+https://docs.docker.com/engine/install/ubuntu/
