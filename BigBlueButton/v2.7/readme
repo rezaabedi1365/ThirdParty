@@ -4,13 +4,23 @@ https://docs.bigbluebutton.org/administration/install/
 docker:
 https://docs.docker.com/engine/install/ubuntu/
 
+Check domain :
+dig elearning.fartest.net 
+dig elearning.faratest.net  @10.10.10.11
 
-install bigbluebutton from github:
+install bigbluebutton from github on Private network:
 https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com
+wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -x [options]
+
+install bigbluebutton from github on Public network:
+https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
+wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -g [options]
 
 verity:
 bbb-conf --check
 sudo bbb-conf --status
+dpkg -l | grep bbb-
+
+
 
 
