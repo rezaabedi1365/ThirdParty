@@ -1,28 +1,32 @@
 document:
 https://docs.bigbluebutton.org/administration/install/
 
-docker:
-https://docs.docker.com/engine/install/ubuntu/
+1-set hostname
+    nano /etc/hosts
+    10.10.11.110 elearning.faratest.net
 
-Check domain :
-dig elearning.fartest.net 
-dig elearning.faratest.net  @10.10.10.11
+2-docker:
+    https://docs.docker.com/engine/install/ubuntu/
 
-install bigbluebutton from github on Private network:
-https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -x [options]
+3-Check domain :
+    dig elearning.fartest.net 
+    dig elearning.faratest.net  @10.10.10.11
+
+4-install bigbluebutton from github on Private network:
+    https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
+    wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -x [options]
 
 install bigbluebutton from github on Public network:
-https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -g [options]
+    https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
+    wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -g [options]
 
-verity:
-bbb-conf --check
-sudo bbb-conf --status
-dpkg -l | grep bbb-
-docker ps
-docker image ls
-    bbb-soffice   latest    e00a11fe4e9f   12 months ago   1.02GB
+5-verity:
+    bbb-conf --check
+    sudo bbb-conf --status
+    dpkg -l | grep bbb-
+    docker ps
+    docker image ls
+            bbb-soffice   latest    e00a11fe4e9f   12 months ago   1.02GB
 
 
-
+sudo bbb-conf --restart
