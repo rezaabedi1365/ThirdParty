@@ -20,6 +20,7 @@ verity:
 bbb-conf --check
 sudo bbb-conf --status
 dpkg -l | grep bbb-
+docker ps
 
 
 
