@@ -21,7 +21,8 @@ bbb-conf --check
 sudo bbb-conf --status
 dpkg -l | grep bbb-
 docker ps
-
+docker image ls
+    bbb-soffice   latest    e00a11fe4e9f   12 months ago   1.02GB
 
 
 
