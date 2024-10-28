@@ -30,3 +30,5 @@ install bigbluebutton from github on Public network:
 
 
 sudo bbb-conf --restart
+
+bbb-record --list
