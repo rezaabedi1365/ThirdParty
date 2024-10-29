@@ -32,3 +32,23 @@ install bigbluebutton from github on Public network:
 sudo bbb-conf --restart
 
 bbb-record --list
+---------------------------------------------------------------------------------------------
+Let's Encrypt Certificate Using DNS Validation with acme-dns-certbot
+https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-acme-dns-certbot-on-ubuntu-18-04
+
+1 - instll certbot:
+    sudo apt-add-repository ppa:certbot/certbot
+
+    apt install python3-pip
+    pip install certbot-external-auth
+
+2 — Installing acme-dns-certbot
+ 
+    sudo certbot -d elearning.faratest.net --manual --preferred-challenges dns certonly
+    sudo certbot certonly --manual --preferred-challenges=dns -d *.example.com -d *.internal.example.com
+    sudo certbot certonly --manual --preferred-challenges=dns -d *.example.com -d server.internal.example.com
+>nslookup -type=TXT _acme-challenge.DOMAIN
+
+3- Automation, Renewal, Scripting
+    sudo apt install certbot
+    certbot --version
