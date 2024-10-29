@@ -33,6 +33,12 @@ sudo bbb-conf --restart
 
 bbb-record --list
 ---------------------------------------------------------------------------------------------
+How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
+https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04
+
+sudo certbot certonly --standalone -d your_domain
+
+---------------------------------------------------------------------------------------------
 Let's Encrypt Certificate Using DNS Validation with acme-dns-certbot
 https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-acme-dns-certbot-on-ubuntu-18-04
 
