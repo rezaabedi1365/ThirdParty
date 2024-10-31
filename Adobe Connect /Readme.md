@@ -1,3 +1,8 @@
+Server requirements for on-premise deployment
+https://helpx.adobe.com/adobe-connect/adobe-connect-11-tech-specs.html
+  Windows:
+    Microsoft Windows Server 2016(64-bit), 2019 (64-bit)
+
 https://www.mobinhost.com/mag/install-adobe-connect/
 https://www.aparat.com/v/Wjl9X
 
