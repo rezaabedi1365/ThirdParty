@@ -21,8 +21,9 @@ https://www.aparat.com/v/d61he7n
 Certificate:
 https://medium.com/@munteanu210/how-to-install-an-ssl-certificate-on-adobe-connect-589b0d9e0699
 
-C:\Connect\9.x\appserv\conf\server.xml
+C:\Connect\11.0\appserv\conf\server.xml
 C:\Connect\Stunnel\conf
+c:\Connect\11.0\custom.ini
 
 cert = C:\Connect\stunnel\certs\public_certificate_app-server.pem
 key = C:\Connect\stunnel\certs\private_key_app-server.key
