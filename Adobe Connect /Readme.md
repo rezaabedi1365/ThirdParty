@@ -10,3 +10,5 @@ https://www.aparat.com/v/d61he7n
 
 - If you are trying to launch a meeting in Classic mode, you need to have the Adobe Media Servers (AMS) up and recognized by the Connect cluster.
 - If you are trying to launch in Standard mode you will need both the Adobe Connect Transmuxing Servers (ACTS) and AMS servers up and recognized by the Connect cluster. 
+
+![image](https://github.com/user-attachments/assets/6447c653-b33f-4146-ad13-e5f0bd4ac524)
