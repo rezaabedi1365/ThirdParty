@@ -31,3 +31,8 @@ cert = C:\Connect\stunnel\certs\public_certificate_app-server.pem
 key = C:\Connect\stunnel\certs\private_key_app-server.key
 
 
+
+
+Adobe Connect LDAP Synchronization configuration for MS Active Directory:
+https://helpx.adobe.com/adobe-connect/kb/breeze-connect-enterprise-server-ldap.html
+
