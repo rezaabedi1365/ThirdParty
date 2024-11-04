@@ -35,4 +35,4 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 
 Adobe Connect LDAP Synchronization configuration for MS Active Directory:
 https://helpx.adobe.com/adobe-connect/kb/breeze-connect-enterprise-server-ldap.html
-
+https://www.aparat.com/v/e5128p7
