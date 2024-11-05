@@ -45,6 +45,10 @@ wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v bionic
 Add to hosts file ip and you domain. Example:
     10.211.55.9 example.com
 
+---------------------------------------------------------------------------------------------
+instlal certificate:
+https://avinyaweb.com/bigbluebutton/install-configure-lets-encrypt-ssl-in-bigbluebutton/
+
 
 ---------------------------------------------------------------------------------------------
 How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
