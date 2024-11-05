@@ -33,6 +33,20 @@ sudo bbb-conf --restart
 
 bbb-record --list
 ---------------------------------------------------------------------------------------------
+install Big Blue Button with self-signed certificate:
+https://askubuntu.com/questions/1493556/how-to-install-big-blue-button-2-7-0-on-ubuntu-server-20-04-6-lts-as-such-to-not
+https://stackoverflow.com/questions/63048218/self-sign-certificate-bigbluebutton
+
+selfsigned Certificate with openssl:
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
+
+wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v bionic-230 -s 10.211.55.9 -e me@example.com  -a -w
+
+Add to hosts file ip and you domain. Example:
+    10.211.55.9 example.com
+
+
+---------------------------------------------------------------------------------------------
 How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
 https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04
 
