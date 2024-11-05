@@ -49,6 +49,9 @@ Add to hosts file ip and you domain. Example:
 instlal certificate:
 https://avinyaweb.com/bigbluebutton/install-configure-lets-encrypt-ssl-in-bigbluebutton/
 
+--------------------------------------------------------------------------------------------
+/etc/letsencrypt/live/bigbluebutton.faradis.net/fullchain.pem
+/etc/letsencrypt/live/bigbluebutton.faradis.net/privkey.pem
 
 ---------------------------------------------------------------------------------------------
 How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
