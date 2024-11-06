@@ -33,6 +33,15 @@ sudo bbb-conf --restart
 
 bbb-record --list
 ---------------------------------------------------------------------------------------------
+mohamadi:
+1-    127.0.0.1 bigbluebutton
+    127.0.0.1 bigbluebutton.faradis.net
+2- copy certificate 
+    mkdir -p /etc/letsencrypt/live/bigbluebutton.faradis.net
+    /etc/letsencrypt/live/bigbluebutton.faradis.net/fullchain.pem
+    /etc/letsencrypt/live/bigbluebutton.faradis.net/privkey.pem
+3-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com 
+
 install Big Blue Button with self-signed certificate:
 https://askubuntu.com/questions/1493556/how-to-install-big-blue-button-2-7-0-on-ubuntu-server-20-04-6-lts-as-such-to-not
 https://stackoverflow.com/questions/63048218/self-sign-certificate-bigbluebutton
@@ -41,8 +50,6 @@ selfsigned Certificate with openssl:
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
 
 wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v bionic-230 -s 10.211.55.9 -e me@example.com  -a -w
-mohamadi:
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com 
 
 apt up
 Add to hosts file ip and you domain. Example:
