@@ -1,7 +1,7 @@
 
 https://superuser.com/questions/1328395/esxi-tls-configuration
 ESXI :
-/etc/vmware/rhttpproxyconfig.xml
+vi /etc/vmware/rhttpproxy/config.xml
 Then, search the <ssl> section and change the line
         <!-- <protocols>tls1.0,tls1.1,tls1.2</protocols> -->
 to
