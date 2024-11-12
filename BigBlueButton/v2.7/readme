@@ -10,9 +10,11 @@ bahmani :
 
 3-docker:
     https://docs.docker.com/engine/install/ubuntu/
+   *apt install docker-compose
 
 4- copy certificate 
   add cert to letseccryt
+    *Note: nano /etc/nginx/sites-available/bbbdocker 
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
      copy your certificate and key in this path with tihs names:
           /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
