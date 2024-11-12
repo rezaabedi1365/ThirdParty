@@ -3,14 +3,15 @@ bahmani :
   verify your 
         \etc\hostname
         \etc\hosts
+2- add dns A record for bbb.faradis.net
     nslookup bbb.faradis.net
     dig elearning.fartest.net 
     dig elearning.faratest.net  @10.10.10.1
 
-2-docker:
+3-docker:
     https://docs.docker.com/engine/install/ubuntu/
 
-3- copy certificate 
+4- copy certificate 
   add cert to letseccryt
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
      copy your certificate and key in this path with tihs names:
@@ -22,10 +23,10 @@ bahmani :
           /etc/haproxy/certbundle.pem
 ***** after complete install replaced default cert den you replace it again and restart haproxy service
 
-4- install 
+5- install 
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 
-5- verify:
+6- verify:
     bbb-conf --check
     sudo bbb-conf --status
     dpkg -l | grep bbb-
@@ -54,15 +55,8 @@ systemctl status haproxy
             Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx-http2 started.
             Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx-http2 started.
             Nov 12 07:54:05 bbb.faradis.net systemd[1]: Reloading HAProxy Load Balancer.
-            Nov 12 07:54:05 bbb.faradis.net haproxy[512747]: Enter PEM pass phrase:
-            Nov 12 07:54:05 bbb.faradis.net haproxy[512747]: [ALERT] 316/075405 (512747) : parsing [/etc/haproxy>
-            Nov 12 07:54:05 bbb.faradis.net haproxy[512747]: [ALERT] 316/075405 (512747) : Error(s) found in con>
-            Nov 12 07:54:05 bbb.faradis.net haproxy[512747]: [ALERT] 316/075405 (512747) : Fatal errors found in>
-            Nov 12 07:54:05 bbb.faradis.net systemd[1]: haproxy.service: Control process exited, code=exited, st>
-            Nov 12 07:54:05 bbb.faradis.net systemd[1]: Reload failed for HAProxy Load Balancer.
 
-
-6- add user 
+7- add user 
 docker exec greenlight-v3 bundle exec rake admin:create
 user: admin@faratest.net
 password: p@swordTEst
