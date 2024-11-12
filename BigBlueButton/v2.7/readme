@@ -1,5 +1,5 @@
 bahmani :
-1- set hostname  hostnamectl set-hostname bbb.faratest.net
+1- set hostname  hostnamectl set-hostname bbb.faradis.net
   verify your 
         \etc\hostname
         \etc\hosts
@@ -10,7 +10,7 @@ bahmani :
     /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
     /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
 3- install 
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-ins  tall.sh | bash -s -- -w -v focal-270 -s bbb.faratest.net -w -g -k
+wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 
 4- verify:
     bbb-conf --check
