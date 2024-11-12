@@ -13,10 +13,13 @@ bahmani :
 3- copy certificate 
   add cert to letseccryt
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
-      /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
-      /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
+     copy your certificate and key in this path with tihs names:
+          /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
+          /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
  ***replace your cert to bellow path for haproxy***
-      /etc/haproxy/certbundle.pem
+      mkdir -p /etc/haproxy
+     copy your certificate in this path with tihs names:
+          /etc/haproxy/certbundle.pem
 ***** after complete install replaced default cert den you replace it again and restart haproxy service
 
 4- install 
