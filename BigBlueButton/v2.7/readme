@@ -3,7 +3,7 @@ bahmani :
   verify your 
         \etc\hostname
         \etc\hosts
-   nslookup bbb.faratest.net
+   nslookup bbb.faradis.net
 
 2- copy certificate 
     mkdir -p /etc/letsencrypt/live/bbb.faradis.net
