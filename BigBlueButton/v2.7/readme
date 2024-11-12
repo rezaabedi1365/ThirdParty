@@ -3,16 +3,21 @@ bahmani :
   verify your 
         \etc\hostname
         \etc\hosts
-   nslookup bbb.faradis.net
+    nslookup bbb.faradis.net
+    dig elearning.fartest.net 
+    dig elearning.faratest.net  @10.10.10.1
 
-2- copy certificate 
+2-docker:
+    https://docs.docker.com/engine/install/ubuntu/
+
+3- copy certificate 
     mkdir -p /etc/letsencrypt/live/bbb.faradis.net
     /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
     /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
-3- install 
+4- install 
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 
-4- verify:
+5- verify:
     bbb-conf --check
     sudo bbb-conf --status
     dpkg -l | grep bbb-
@@ -49,7 +54,7 @@ systemctl status haproxy
             Nov 12 07:54:05 bbb.faradis.net systemd[1]: Reload failed for HAProxy Load Balancer.
 
 
-5- add user 
+6- add user 
 docker exec greenlight-v3 bundle exec rake admin:create
 user: admin@faratest.net
 password: p@swordTEst
@@ -85,56 +90,18 @@ udp        0      0 172.20.190.66:5060      0.0.0.0:*                           
 udp        0      0 172.20.190.66:5090      0.0.0.0:*                           513457/freeswitch
 udp        0      0 172.20.190.66:3478      0.0.0.0:*                           512626/turnserver
 
-
-
-
-
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 document:
 https://docs.bigbluebutton.org/administration/install/
 
-1-set hostname
-    nano /etc/hosts
-    10.10.11.110 elearning.faratest.net
-
-2-docker:
-    https://docs.docker.com/engine/install/ubuntu/
-
-3-Check domain :
-    dig elearning.fartest.net 
-    dig elearning.faratest.net  @10.10.10.11
-
-4-install bigbluebutton from github on Private network:
-    https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
-    wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -x [options]
-
-install bigbluebutton from github on Public network:
-    https://github.com/bigbluebutton/bbb-install/tree/v2.7.x-release
-    wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.example.com -e info@example.com -w -g [options]
-
-5-verity:
-    bbb-conf --check
-    sudo bbb-conf --status
-    dpkg -l | grep bbb-
-    docker ps
-    docker image ls
-            bbb-soffice   latest    e00a11fe4e9f   12 months ago   1.02GB
-
-
 sudo bbb-conf --restart
-
 bbb-record --list
+
 ---------------------------------------------------------------------------------------------
 mohamadi:
-1-    127.0.0.1 bigbluebutton
-    127.0.0.1 bigbluebutton.faradis.net
-2- copy certificate 
-    mkdir -p /etc/letsencrypt/live/bigbluebutton.faradis.net
-    /etc/letsencrypt/live/bigbluebutton.faradis.net/fullchain.pem
-    /etc/letsencrypt/live/bigbluebutton.faradis.net/privkey.pem
-3-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com 
+wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 install Big Blue Button with self-signed certificate:
 https://askubuntu.com/questions/1493556/how-to-install-big-blue-button-2-7-0-on-ubuntu-server-20-04-6-lts-as-such-to-not
 https://stackoverflow.com/questions/63048218/self-sign-certificate-bigbluebutton
@@ -143,25 +110,15 @@ selfsigned Certificate with openssl:
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
 
 wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v bionic-230 -s 10.211.55.9 -e me@example.com  -a -w
-
-apt up
-Add to hosts file ip and you domain. Example:
-    10.211.55.9 example.com
-
 ---------------------------------------------------------------------------------------------
 instlal certificate:
 https://avinyaweb.com/bigbluebutton/install-configure-lets-encrypt-ssl-in-bigbluebutton/
 
 --------------------------------------------------------------------------------------------
-/etc/letsencrypt/live/bigbluebutton.faradis.net/fullchain.pem
-/etc/letsencrypt/live/bigbluebutton.faradis.net/privkey.pem
-
----------------------------------------------------------------------------------------------
 How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
 https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04
 
 sudo certbot certonly --standalone -d your_domain
-
 ---------------------------------------------------------------------------------------------
 Let's Encrypt Certificate Using DNS Validation with acme-dns-certbot
 https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-acme-dns-certbot-on-ubuntu-18-04
