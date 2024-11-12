@@ -104,6 +104,7 @@ https://docs.bigbluebutton.org/administration/install/
 
 sudo bbb-conf --restart
 bbb-record --list
+bbb-conf --setip example.com
 
 ---------------------------------------------------------------------------------------------
 mohamadi:
