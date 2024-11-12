@@ -1,6 +1,10 @@
 bahmani :
-1- set hostname
-  verify your \etc\hosts
+1- set hostname  hostnamectl set-hostname bbb.faratest.net
+  verify your 
+        \etc\hostname
+        \etc\hosts
+   nslookup bbb.faratest.net
+
 2- copy certificate 
     mkdir -p /etc/letsencrypt/live/bigbluebutton.faradis.net
     /etc/letsencrypt/live/bigbluebutton.faradis.net/fullchain.pem
