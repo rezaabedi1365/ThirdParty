@@ -11,9 +11,14 @@ bahmani :
     https://docs.docker.com/engine/install/ubuntu/
 
 3- copy certificate 
-    mkdir -p /etc/letsencrypt/live/bbb.faradis.net
-    /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
-    /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
+  add cert to letseccryt
+      mkdir -p /etc/letsencrypt/live/bbb.faradis.net
+      /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
+      /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
+ ***replace your cert to bellow path for haproxy***
+      /etc/haproxy/certbundle.pem
+***** after complete install replaced default cert den you replace it again and restart haproxy service
+
 4- install 
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 
