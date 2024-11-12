@@ -14,21 +14,26 @@ bahmani :
 
 4- copy certificate 
   add cert to letseccryt
-    *Note: nano /etc/nginx/sites-available/bbbdocker 
+  *Note: nano /etc/nginx/sites-available/bigbluebutton
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
      copy your certificate and key in this path with tihs names:
           /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
           /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
- ***replace your cert to bellow path for haproxy***
-      mkdir -p /etc/haproxy
-     copy your certificate in this path with tihs names:
-          /etc/haproxy/certbundle.pem
-***** after complete install replaced default cert den you replace it again and restart haproxy service
+
 
 5- install 
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 
-6- verify:
+6- you have error 4.3 connectiopn refus
+ ***replace your cert to bellow path for haproxy***
+ *Note:  bind *:443,:::443 ssl crt /etc/haproxy/certbundle.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
+      mkdir -p /etc/haproxy
+     copy your certificate in this path with tihs names:
+          /etc/haproxy/certbundle.pem
+     systemctl restart haproxy
+***** after complete install replaced default cert den you replace it again and restart haproxy service
+
+7- verify:
     bbb-conf --check
     sudo bbb-conf --status
     dpkg -l | grep bbb-
@@ -58,7 +63,7 @@ systemctl status haproxy
             Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx-http2 started.
             Nov 12 07:54:05 bbb.faradis.net systemd[1]: Reloading HAProxy Load Balancer.
 
-7- add user 
+8- add user 
 docker exec greenlight-v3 bundle exec rake admin:create
 user: admin@faratest.net
 password: p@swordTEst
