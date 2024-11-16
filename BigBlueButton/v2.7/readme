@@ -79,10 +79,17 @@ wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-rel
             2770a3a62b47   greenlight-v3_default   bridge    local
 
 systemctl status haproxy
-            Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx started.
-            Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx-http2 started.
-            Nov 12 07:49:38 bbb.faradis.net haproxy[507928]: Proxy nginx-http2 started.
-            Nov 12 07:54:05 bbb.faradis.net systemd[1]: Reloading HAProxy Load Balancer.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx_or_turn started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx_or_turn started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy turn started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy turn started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx started.
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx-http2 started.
+            Nov 16 11:41:52 bbb haproxy[135047]: [NOTICE] 320/114152 (135047) : New worker #1 (135049) fo>
+            Nov 16 11:41:52 bbb haproxy[135047]: Proxy nginx-http2 started.
+            Nov 16 11:41:52 bbb systemd[1]: Started HAProxy Load Balancer.
+
 
 8- add user 
 docker exec greenlight-v3 bundle exec rake admin:create
