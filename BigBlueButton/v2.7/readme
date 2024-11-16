@@ -14,8 +14,14 @@ bahmani :
 
 4- copy certificate 
   add cert to letseccryt
-     mkdir -p /etc/letsencrypt/live/bbb.faradis.net
-     copy your certificate and key in this path with tihs names:
+  A- Convert your pfx certificate to pem cert and pem key
+     We can extract the private key form a PFX to a PEM file with this command:
+       # openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
+     Exporting the certificate only:
+       # openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
+  B - Replace your cert
+      mkdir -p /etc/letsencrypt/live/bbb.faradis.net
+      copy your certificate and key in this path with tihs names:
           /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
           /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
 
@@ -24,7 +30,22 @@ bahmani :
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.faradis.net -e admin@faradis.net -w -x 
 
 
-6- you have error 4.3 connectiopn refus
+6- you have error 403 connectiopn refus
+     A - convert your certificate pfx to 
+          To convert a PFX file to a PEM file that contains both the certificate and private key, the following command needs to be used:
+          #openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+     B - Replace your cert fullchain.pem to bellow path in certbundle.pem for haproxy***
+         copy your certificate in this path with tihs names:
+          /etc/haproxy/fullchain.pem
+          *Note:  bind *:443,:::443 ssl crt /etc/haproxy/fullchain.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
+
+     systemctl restart haproxy
+***** after complete install replaced default cert den you replace it again and restart haproxy service
+
+7- install Greenlight & Keycloak
+wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
+
+8- you have error 4.3 connectiopn refus
  ***replace your cert to bellow path for haproxy***
  *Note:  bind *:443,:::443 ssl crt /etc/haproxy/certbundle.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
       mkdir -p /etc/haproxy
@@ -33,10 +54,7 @@ wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-rel
      systemctl restart haproxy
 ***** after complete install replaced default cert den you replace it again and restart haproxy service
 
-7- install Greenlight & Keycloak
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
-
-8- verify:
+9- verify:
     bbb-conf --check
     sudo bbb-conf --status
     dpkg -l | grep bbb-
