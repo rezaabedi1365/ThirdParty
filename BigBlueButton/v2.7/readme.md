@@ -38,7 +38,7 @@
   ```
 
 6- you have error 403 connectiopn refus
-* A- convert your certificate pfx to
+* A- convert your certificate pfx to PEM
   + PEM file that contains both the certificate and private key, the following command needs to be used:
 ```
 openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
@@ -52,10 +52,10 @@ openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
  *Note: after complete install replaced default cert den you replace it again and restart haproxy service
  ```
 
-Restart Haproxy Service:
-``` 
-systemctl restart haproxy
-```
+* C- Restart Haproxy Service:
+   ``` 
+    systemctl restart haproxy
+   ```
 
 
 7- install Greenlight & Keycloak
