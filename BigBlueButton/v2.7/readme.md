@@ -138,45 +138,4 @@ sudo bbb-conf --restart
 bbb-record --list
 bbb-conf --setip example.com
 
----------------------------------------------------------------------------------------------
-mohamadi:
-wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.example.com -e info@example.com 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-install Big Blue Button with self-signed certificate:
-https://askubuntu.com/questions/1493556/how-to-install-big-blue-button-2-7-0-on-ubuntu-server-20-04-6-lts-as-such-to-not
-https://stackoverflow.com/questions/63048218/self-sign-certificate-bigbluebutton
-
-selfsigned Certificate with openssl:
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
-
-wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v bionic-230 -s 10.211.55.9 -e me@example.com  -a -w
----------------------------------------------------------------------------------------------
-instlal certificate:
-https://avinyaweb.com/bigbluebutton/install-configure-lets-encrypt-ssl-in-bigbluebutton/
-
---------------------------------------------------------------------------------------------
-How To Use Certbot Standalone Mode to Retrieve Let's Encrypt SSL Certificates 
-https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04
-
-sudo certbot certonly --standalone -d your_domain
----------------------------------------------------------------------------------------------
-Let's Encrypt Certificate Using DNS Validation with acme-dns-certbot
-https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-acme-dns-certbot-on-ubuntu-18-04
-
-1 - instll certbot:
-    sudo apt-add-repository ppa:certbot/certbot
-
-    apt install python3-pip
-    pip install certbot-external-auth
-
-2 — Installing acme-dns-certbot
- 
-    sudo certbot -d elearning.faratest.net --manual --preferred-challenges dns certonly
-    sudo certbot certonly --manual --preferred-challenges=dns -d *.example.com -d *.internal.example.com
-    sudo certbot certonly --manual --preferred-challenges=dns -d *.example.com -d server.internal.example.com
->nslookup -type=TXT _acme-challenge.DOMAIN
-
-3- Automation, Renewal, Scripting
-    sudo apt install certbot
-    certbot --version
