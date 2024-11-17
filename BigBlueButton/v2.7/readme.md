@@ -7,7 +7,9 @@ verify:
 - \etc\hostname
 - \etc\hosts
    
-2- add dns A record for bbb.faradis.net
+2- add dns A record for bbb.faradis.net and set local dns in /etc/netplan/00-installer-config.yaml
+
+vrify:
    ```
     nslookup bbb.faradis.net
     dig elearning.fartest.net 
