@@ -43,15 +43,20 @@ wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-rel
 
 6- you have error 403 connectiopn refus
      A - convert your certificate pfx to 
-          To convert a PFX file to a PEM file that contains both the certificate and private key, the following command needs to be used:
-          #openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+          - To convert a PFX file to a PEM file that contains both the certificate and private key, the following command needs to be used:
+          ```
+          openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+          ```
      B - Replace your cert fullchain.pem to bellow path in certbundle.pem for haproxy***
-         copy your certificate in this path with tihs names:
+         - copy your certificate in this path with tihs names:
+         ```
           /etc/haproxy/fullchain.pem
           *Note:  bind *:443,:::443 ssl crt /etc/haproxy/fullchain.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
-
-     systemctl restart haproxy
-***** after complete install replaced default cert den you replace it again and restart haproxy service
+          ```
+          ```
+          systemctl restart haproxy
+          ```
+*Note: after complete install replaced default cert den you replace it again and restart haproxy service
 
 7- install Greenlight & Keycloak
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
