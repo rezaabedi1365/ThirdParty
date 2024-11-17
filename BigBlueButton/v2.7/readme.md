@@ -2,8 +2,8 @@
 1- set hostname  hostnamectl set-hostname bbb.faradis.net
   - verify your
     ```
-        \etc\hostname
-        \etc\hosts
+    \etc\hostname
+    \etc\hosts
     ```
 2- add dns A record for bbb.faradis.net
     nslookup bbb.faradis.net
