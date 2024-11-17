@@ -6,9 +6,11 @@
     \etc\hosts
     ```
 2- add dns A record for bbb.faradis.net
+   ```
     nslookup bbb.faradis.net
     dig elearning.fartest.net 
     dig elearning.faratest.net  @10.10.10.1
+   ```
 
 3-docker:
     https://docs.docker.com/engine/install/ubuntu/
