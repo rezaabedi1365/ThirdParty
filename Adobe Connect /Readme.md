@@ -1,7 +1,8 @@
-Server requirements for on-premise deployment
+# install :
 https://helpx.adobe.com/adobe-connect/adobe-connect-11-tech-specs.html
-  Windows:
-    Microsoft Windows Server 2016(64-bit), 2019 (64-bit)
+* Server requirements for on-premise deployment
+   -  Windows:
+         + Microsoft Windows Server 2016(64-bit), 2019 (64-bit)
 
 install :
 https://www.linkedin.com/pulse/how-implement-adobe-connect-server-secured-ssl-html5-feature-nima/
