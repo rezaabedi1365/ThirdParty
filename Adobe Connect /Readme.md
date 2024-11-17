@@ -15,6 +15,10 @@ https://helpx.adobe.com/adobe-connect/adobe-connect-11-tech-specs.html
 
 ![image](https://github.com/user-attachments/assets/6447c653-b33f-4146-ad13-e5f0bd4ac524)
 
+Server Setting :
+
+![Uploading image.png…]()
+
 # How to install an SSL certificate on Adobe Connect?
 - https://medium.com/@munteanu210/how-to-install-an-ssl-certificate-on-adobe-connect-589b0d9e0699
 ```
@@ -25,3 +29,4 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 # Adobe Connect LDAP Synchronization configuration for MS Active Directory:
 - https://helpx.adobe.com/adobe-connect/kb/breeze-connect-enterprise-server-ldap.html
 - https://www.aparat.com/v/e5128p7
+
