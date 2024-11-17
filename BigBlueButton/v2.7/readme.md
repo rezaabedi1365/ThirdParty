@@ -40,17 +40,17 @@
 6- you have error 403 connectiopn refus
 * A- convert your certificate pfx to PEM
   + PEM file that contains both the certificate and private key, the following command needs to be used:
-```
-openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
-```
+  ```
+  openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+  ```
 
 * B- Replace your cert fullchain.pem to bellow path in certbundle.pem for haproxy***
-```
- 1- copy fullchain pem to this place /etc/haproxy/fullchain.pem
- 2- change config file and replace fullchain.pem 
- bind *:443,:::443 ssl crt /etc/haproxy/fullchain.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
- *Note: after complete install replaced default cert den you replace it again and restart haproxy service
- ```
+  ```
+   1- copy fullchain pem to this place /etc/haproxy/fullchain.pem
+   2- change config file and replace fullchain.pem 
+   bind *:443,:::443 ssl crt /etc/haproxy/fullchain.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
+   *Note: after complete install replaced default cert den you replace it again and restart haproxy service
+   ```
 
 * C- Restart Haproxy Service:
    ``` 
