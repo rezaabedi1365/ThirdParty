@@ -18,16 +18,10 @@
  
 
 4- copy certificate to letseccryt
-
-    A- Convert your pfx certificate to pem cert and pem key
-      - We can extract the private key form a PFX to a PEM file with this command:
-      ```
-       openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
-       ```
-      - Exporting the certificate only:
-       ```
-       openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
-       ```
+``` 
+  openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
+  openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
+```
   B - Replace your cert
   ```
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
