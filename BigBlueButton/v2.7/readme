@@ -93,8 +93,11 @@ systemctl status haproxy
 
 8- add user 
 docker exec greenlight-v3 bundle exec rake admin:create
-user: admin@faratest.net
-password: p@swordTEst
+User account was created successfully!
+  Name: Administrator
+  Email: admin@example.com
+  Password: Administrator1!
+  Role: Administrator
 
 
 root@bbb# netstat -ntlup | grep -v tcp6
