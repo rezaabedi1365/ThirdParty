@@ -35,6 +35,11 @@
   wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.faradis.net -e admin@faradis.net -w -x 
   ```
 
+6- test
+```
+test
+```
+
 6- you have error 403 connectiopn refus
   A- convert your certificate pfx to 
           - To convert a PFX file to a PEM file that contains both the certificate and private key, the following command needs to be used:
