@@ -20,10 +20,10 @@
 4- copy certificate to letseccryt
 
 * A - Convert pfx to pem cert and pem key 
-``` 
-  openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
-  openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
-```
+  ``` 
+   openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
+   openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
+  ```
 * B - Replace your cert
   ```
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
