@@ -1,6 +1,6 @@
 # Install Bigbluebutton on-permiss server :
 1- set hostname  hostnamectl set-hostname bbb.faradis.net
-  - verify your
+  
     ```
     \etc\hostname
     \etc\hosts
@@ -17,23 +17,29 @@
     https://docs.docker.com/engine/install/ubuntu/
  
 
-4- copy certificate 
-  add cert to letseccryt
-  A- Convert your pfx certificate to pem cert and pem key
-     We can extract the private key form a PFX to a PEM file with this command:
-       # openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
-     Exporting the certificate only:
-       # openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
+4- copy certificate to letseccryt
+
+    A- Convert your pfx certificate to pem cert and pem key
+      - We can extract the private key form a PFX to a PEM file with this command:
+      ```
+       openssl pkcs12 -in filename.pfx -nocerts -out privkey.pem
+       ```
+      - Exporting the certificate only:
+       ```
+       openssl pkcs12 -in filename.pfx -clcerts -nokeys -out fullchain.pem
+       ```
   B - Replace your cert
+  ```
       mkdir -p /etc/letsencrypt/live/bbb.faradis.net
-      copy your certificate and key in this path with tihs names:
+      # copy your certificate and key in this path with tihs names:
           /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
           /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
-
+```
 
 5- install 
+```
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.faradis.net -e admin@faradis.net -w -x 
-
+```
 
 6- you have error 403 connectiopn refus
      A - convert your certificate pfx to 
