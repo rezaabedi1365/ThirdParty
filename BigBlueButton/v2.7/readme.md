@@ -1,10 +1,12 @@
 # Install Bigbluebutton on-permiss server :
-1- set hostname  hostnamectl set-hostname bbb.faradis.net
-  
-    ```
-    \etc\hostname
-    \etc\hosts
-    ```
+1- set hostname  
+```
+hostnamectl set-hostname bbb.faradis.net
+```
+verify:
+- \etc\hostname
+- \etc\hosts
+   
 2- add dns A record for bbb.faradis.net
    ```
     nslookup bbb.faradis.net
