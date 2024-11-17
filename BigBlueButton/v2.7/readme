@@ -133,7 +133,7 @@ udp        0      0 172.20.190.66:3478      0.0.0.0:*                           
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 document:
 https://docs.bigbluebutton.org/administration/install/
-
+https://docs.bigbluebutton.org/administration/bbb-conf/
 sudo bbb-conf --restart
 bbb-record --list
 bbb-conf --setip example.com
