@@ -1,23 +1,20 @@
-# install :
+
 https://helpx.adobe.com/adobe-connect/adobe-connect-11-tech-specs.html
-* Server requirements for on-premise deployment
-   -  Windows:
-         + Microsoft Windows Server 2016(64-bit), 2019 (64-bit)
+# Server requirements for on-premise deployment
+   * Windows:
+         - Microsoft Windows Server 2016(64-bit), 2019 (64-bit)
 
-install :
-https://www.linkedin.com/pulse/how-implement-adobe-connect-server-secured-ssl-html5-feature-nima/
-https://www.mobinhost.com/mag/install-adobe-connect/
-https://www.aparat.com/v/Wjl9X
-
-
-
-https://www.aparat.com/v/d61he7n
+# install :
+- https://www.linkedin.com/pulse/how-implement-adobe-connect-server-secured-ssl-html5-feature-nima/
+- https://www.mobinhost.com/mag/install-adobe-connect/
+- https://www.aparat.com/v/Wjl9X
+- https://www.aparat.com/v/d61he7n
 
 ![image](https://github.com/user-attachments/assets/e8a2c23d-450d-4413-8b25-c166d39d5e1a)
 
 
-- If you are trying to launch a meeting in Classic mode, you need to have the Adobe Media Servers (AMS) up and recognized by the Connect cluster.
-- If you are trying to launch in Standard mode you will need both the Adobe Connect Transmuxing Servers (ACTS) and AMS servers up and recognized by the Connect cluster. 
+* Note: If you are trying to launch a meeting in Classic mode, you need to have the Adobe Media Servers (AMS) up and recognized by the Connect cluster.
+* Note: If you are trying to launch in Standard mode you will need both the Adobe Connect Transmuxing Servers (ACTS) and AMS servers up and recognized by the Connect cluster. 
 
 ![image](https://github.com/user-attachments/assets/6447c653-b33f-4146-ad13-e5f0bd4ac524)
 
