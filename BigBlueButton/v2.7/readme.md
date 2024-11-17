@@ -63,7 +63,7 @@
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 ```
 
-8- after complete install  default Haproxy cert Replace to step 6 . you must replace your Ceret again and restart haproxy service
+8- after complete install  default Haproxy cert Replace to step 6 . you must replace your Cert again and restart haproxy service
 ```
  1- copy fullchain pem to this place /etc/haproxy/fullchain.pem
  2- change config file and replace fullchain.pem 
