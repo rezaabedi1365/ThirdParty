@@ -57,7 +57,9 @@ systemctl restart haproxy
 
 
 7- install Greenlight & Keycloak
+```
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
+```
 
 8- you have error 4.3 connectiopn refus
  ***replace your cert to bellow path for haproxy***
