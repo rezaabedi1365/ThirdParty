@@ -36,7 +36,7 @@
   ```
 
 6- you have error 403 connectiopn refus
-- convert your certificate pfx to 
+A- convert your certificate pfx to 
 ```
 openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
 openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
