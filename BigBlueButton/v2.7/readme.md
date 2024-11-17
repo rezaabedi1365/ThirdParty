@@ -36,17 +36,18 @@
   ```
 
 6- you have error 403 connectiopn refus
-A- test
-B- test
+- convert your certificate pfx to 
 ```
-test
+openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+
 ```
 
 6- you have error 403 connectiopn refus
   A- convert your certificate pfx to 
           - To convert a PFX file to a PEM file that contains both the certificate and private key, the following command needs to be used:
           ```
-          openssl pkcs12 -in filename.pfx -out fullchain.pem -nodes
+          
           ```
   B- Replace your cert fullchain.pem to bellow path in certbundle.pem for haproxy***
          - copy your certificate in this path with tihs names:
