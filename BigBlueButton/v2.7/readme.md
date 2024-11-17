@@ -61,14 +61,13 @@ systemctl restart haproxy
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -w -v focal-270 -s bbb.faradis.net -w -g -k
 ```
 
-8- you have error 4.3 connectiopn refus
- ***replace your cert to bellow path for haproxy***
- *Note:  bind *:443,:::443 ssl crt /etc/haproxy/certbundle.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
-      mkdir -p /etc/haproxy
-     copy your certificate in this path with tihs names:
-          /etc/haproxy/certbundle.pem
-     systemctl restart haproxy
-***** after complete install replaced default cert den you replace it again and restart haproxy service
+8- after complete install  default Haproxy cert Replace to step 6 . you must replace your Ceret again and restart haproxy service
+```
+ 1- copy fullchain pem to this place /etc/haproxy/fullchain.pem
+ 2- change config file and replace fullchain.pem 
+ bind *:443,:::443 ssl crt /etc/haproxy/fullchain.pem ssl-min-ver TLSv1.2 alpn h2,http/1.1
+ *Note: after complete install replaced default cert den you replace it again and restart haproxy service
+```
 
 9- verify:
     bbb-conf --check
