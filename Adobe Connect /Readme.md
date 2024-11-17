@@ -30,3 +30,18 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 - https://helpx.adobe.com/adobe-connect/kb/breeze-connect-enterprise-server-ldap.html
 - https://www.aparat.com/v/e5128p7
 
+Connection Setting :
+![image](https://github.com/user-attachments/assets/d4eb3f2d-8279-4c7e-af84-7897a8df235d)
+
+user profile Mapping:
+![image](https://github.com/user-attachments/assets/ab71aa20-c121-4c66-a741-08c543bacb35)
+
+Group Profile Mapping :
+![image](https://github.com/user-attachments/assets/94833e45-2692-4de1-b996-b2b859a884b9)
+
+Authentication Setting:
+![image](https://github.com/user-attachments/assets/fd2a36f2-db2c-49de-8b8b-1024f8463366)
+
+Synchronization Setting :
+![image](https://github.com/user-attachments/assets/4d1d9b51-bb8d-4d19-9a32-c138368e442d)
+
