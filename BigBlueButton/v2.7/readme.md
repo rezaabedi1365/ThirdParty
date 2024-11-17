@@ -34,10 +34,9 @@
       # copy your certificate and key in this path with tihs names:
           /etc/letsencrypt/live/bbb.faradis.net/fullchain.pem
           /etc/letsencrypt/live/bbb.faradis.net/privkey.pem
-```
+  ```
 
 5- install 
-
 ```
 wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-release/bbb-install.sh | bash -s -- -v focal-270 -s bbb.faradis.net -e admin@faradis.net -w -x 
 ```
