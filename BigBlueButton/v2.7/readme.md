@@ -77,10 +77,10 @@ wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-rel
 
 9- verify:
 
-    *  bbb-conf --check
-    *  sudo bbb-conf --status
-    *  dpkg -l | grep bbb-
-    *  bbb-record --list
+    bbb-conf --check
+    sudo bbb-conf --status
+    dpkg -l | grep bbb-
+    bbb-record --list
  ``` 
     docker ps
             CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS          PORTS                                NAMES
