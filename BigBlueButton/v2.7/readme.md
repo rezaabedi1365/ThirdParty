@@ -171,7 +171,9 @@ udp        0      0 172.20.190.66:3478      0.0.0.0:*                           
 
 # Configuration
 
-### Administration Consol
+### Administrator Panel
+![image](https://github.com/user-attachments/assets/2f7f16c3-2796-4208-971c-d28a22dbeacb)
+
 ![image](https://github.com/user-attachments/assets/e1ac0892-76f1-4e4a-ad47-73834160c63d)
 
 ![image](https://github.com/user-attachments/assets/ce01e7a9-a0b4-470a-93d6-6caf48ec0517)
