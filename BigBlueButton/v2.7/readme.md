@@ -200,12 +200,14 @@ nano docker-compose.yml
 
 
 ### Administration Consol
+* https://your-domain/kycloak
 
 ![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
 
-### user Federaton > LDA{
+### user Federaton > LDAP
 ![image](https://github.com/user-attachments/assets/2e265f07-2474-496e-840b-e585076ab49c)
 
+![image](https://github.com/user-attachments/assets/1f01d136-9075-494d-9a86-268904d9db0f)
 
 - https://www.keycloak.org/docs/latest/server_admin/
 ### Extra note about kycloac 
