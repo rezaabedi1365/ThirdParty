@@ -174,4 +174,6 @@ Document:
   + sudo bbb-conf --restart
   + bbb-conf --setip example.com
 
+# External Authentication
+https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
 
