@@ -118,6 +118,7 @@ systemctl status haproxy
 
 ```
 8- add user 
+Default admin user with example.com 
 ```
 docker exec greenlight-v3 bundle exec rake admin:create
 ```
@@ -126,6 +127,9 @@ docker exec greenlight-v3 bundle exec rake admin:create
    + Email: admin@example.com
    + Password: Administrator1!
    + Role: Administrator
+```
+docker exec -it greenlight-v3 bundle exec rake admin:create['Reza Abedi','r.abedi@faradis.net','P@$$w0rd2024']
+```
  
 # used Ports 
 
