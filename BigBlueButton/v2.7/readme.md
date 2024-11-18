@@ -78,7 +78,7 @@ wget -qO- https://raw.githubusercontent.com/bigbluebutton/bbb-install/v2.7.x-rel
 9- verify:
 
     bbb-conf --check
-    sudo bbb-conf --status
+    bbb-conf --status
     dpkg -l | grep bbb-
     bbb-record --list
  ``` 
