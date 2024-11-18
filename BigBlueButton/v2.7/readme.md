@@ -168,6 +168,12 @@ udp        0      0 172.20.190.66:5060      0.0.0.0:*                           
 udp        0      0 172.20.190.66:5090      0.0.0.0:*                           513457/freeswitch
 udp        0      0 172.20.190.66:3478      0.0.0.0:*                           512626/turnserver
 ```
+
+# Configuration
+![image](https://github.com/user-attachments/assets/ce01e7a9-a0b4-470a-93d6-6caf48ec0517)
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Document:
 - https://docs.bigbluebutton.org/administration/install/
@@ -177,4 +183,6 @@ Document:
 
 # External Authentication
 https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
+
+![image](https://github.com/user-attachments/assets/191124b7-7ff9-4fee-87e3-f8913e48400d)
 
