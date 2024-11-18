@@ -190,7 +190,7 @@ Document:
 
 # External Authentication
 - https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
-show admin password for login :
+* show admin password for login :
 ```
 cd /greenlight-v3
 nano docker-compose.yml
