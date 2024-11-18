@@ -209,6 +209,9 @@ nano docker-compose.yml
 
 ![image](https://github.com/user-attachments/assets/1f01d136-9075-494d-9a86-268904d9db0f)
 
+![image](https://github.com/user-attachments/assets/7063bb6e-64fd-41c9-b04e-02824af3be9e)
+
+
 - https://www.keycloak.org/docs/latest/server_admin/
 ### Extra note about kycloac 
 * install kycloac with docker
