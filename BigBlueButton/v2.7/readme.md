@@ -189,7 +189,8 @@ Document:
   + bbb-conf --setip example.com
 
 # External Authentication
-https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
+- https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
+show admin password for login :
 ```
 cd /greenlight-v3
 nano docker-compose.yml
@@ -201,6 +202,10 @@ nano docker-compose.yml
 ### Administration Consol
 
 ![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
+
+### user Federaton > LDA{
+![image](https://github.com/user-attachments/assets/2e265f07-2474-496e-840b-e585076ab49c)
+
 
 - https://www.keycloak.org/docs/latest/server_admin/
 ### Extra note about kycloac 
