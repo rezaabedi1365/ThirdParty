@@ -184,5 +184,6 @@ Document:
 # External Authentication
 https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
 
-![image](https://github.com/user-attachments/assets/191124b7-7ff9-4fee-87e3-f8913e48400d)
+![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
+
 
