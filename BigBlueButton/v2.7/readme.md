@@ -170,6 +170,10 @@ udp        0      0 172.20.190.66:3478      0.0.0.0:*                           
 ```
 
 # Configuration
+
+### Administration Consol
+![image](https://github.com/user-attachments/assets/e1ac0892-76f1-4e4a-ad47-73834160c63d)
+
 ![image](https://github.com/user-attachments/assets/ce01e7a9-a0b4-470a-93d6-6caf48ec0517)
 
 
@@ -194,6 +198,7 @@ nano docker-compose.yml
 
 
 ### Administration Consol
+
 ![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
 
 - https://www.keycloak.org/docs/latest/server_admin/
