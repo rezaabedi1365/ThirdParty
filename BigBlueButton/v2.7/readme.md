@@ -183,7 +183,9 @@ Document:
 
 # External Authentication
 https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
-
+```
+docker exec -it keycloak /bin/bash
+```
 ![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
 
 
