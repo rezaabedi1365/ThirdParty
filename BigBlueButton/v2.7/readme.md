@@ -184,10 +184,16 @@ Document:
 # External Authentication
 https://docs.bigbluebutton.org/greenlight/v3/external-authentication/
 ```
-docker exec -it keycloak /bin/bash
+cd /greenlight-v3
+nano docker-compose.yml
 ```
+
 ![image](https://github.com/user-attachments/assets/2d3b78ef-33ec-4977-8e46-3db6d9596c20)
 
 - https://www.keycloak.org/docs/latest/server_admin/
-### install kycloac with docker
-https://www.keycloak.org/getting-started/getting-started-docker
+### Extra note about kycloac 
+* install kycloac with docker
+   - https://www.keycloak.org/getting-started/getting-started-docker
+```
+docker exec -it keycloak /bin/bash
+```
