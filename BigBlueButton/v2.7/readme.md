@@ -213,6 +213,9 @@ nano docker-compose.yml
 
 ![image](https://github.com/user-attachments/assets/65f084d4-853c-4468-bae8-4f6796e99e22)
 
+![Uploading image.png…]()
+
+
 
 - https://www.keycloak.org/docs/latest/server_admin/
 ### Extra note about kycloac 
