@@ -213,7 +213,8 @@ nano docker-compose.yml
 
 ![image](https://github.com/user-attachments/assets/65f084d4-853c-4468-bae8-4f6796e99e22)
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/820738c7-f949-4721-a4c7-c94e8360de20)
+
 
 
 
