@@ -207,8 +207,11 @@ nano docker-compose.yml
 ### user Federaton > LDAP
 ![image](https://github.com/user-attachments/assets/bb940334-0dd7-40d6-9961-908bd3cf0574)
 
+![image](https://github.com/user-attachments/assets/80f0d693-493d-45df-a23d-8cfc60f02ebf)
 
 ![image](https://github.com/user-attachments/assets/7063bb6e-64fd-41c9-b04e-02824af3be9e)
+
+![image](https://github.com/user-attachments/assets/65f084d4-853c-4468-bae8-4f6796e99e22)
 
 
 - https://www.keycloak.org/docs/latest/server_admin/
