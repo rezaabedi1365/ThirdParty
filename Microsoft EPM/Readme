@@ -1,0 +1,23 @@
+
+share point management shell
+
+	>Get-ProjcetServerLicense
+	>Enable-PrijectServerLicense -key 00000.00000.00000.00000.00000
+Registe managed account   
+	Create User in Active Directory
+	share point> security > General Security > configure managed account > new managed account>add
+
+install and configuration service application
+	share pint> application management > service applications > new > Project server application
+		- service application name
+		- create new application pool
+		- select security account for this application pool
+		- check proxy 
+	verify :
+	share point> system setting > manage services in the farm > check status start
+	
+	configuratin :
+	
+	
+	
+
