@@ -1,3 +1,8 @@
+
+Bahmani :
+
+
+--------------------------------------
 ESXI :
 /etc/vmware/rhttpproxyconfig.xml
 Then, search the <ssl> section and change the line
