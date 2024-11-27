@@ -23,8 +23,11 @@ Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Head
   - Security Manager -> Sender Authentication -> DKIM Signing > Create new puplic and private keys
   - this file saved as : c:\MDaemon\PEM\MDaemon\dns_readme.txt
  * Exchange
-   - By Default Exchange not support DKIM
+   - By Default Exchange not support DKIM you must create it on Edge 
    - https://powerdmarc.com/dkim-on-prem-exchange-server-setup/
+ * Symantec Messaging Gateway 
+   - https://techdocs.broadcom.com/us/en/symantec-security-software/email-security/messaging-gateway/10-7-3/Spam_5/enabling-dkim-signing-for-a-domain-v27452323-d419e2546.html
+   - Administration > Settings > Certificates > Domain Keys 
 
 ```
 "v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb..."
