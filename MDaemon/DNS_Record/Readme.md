@@ -27,7 +27,9 @@ Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Head
    - https://powerdmarc.com/dkim-on-prem-exchange-server-setup/
  * Symantec Messaging Gateway 
    - https://techdocs.broadcom.com/us/en/symantec-security-software/email-security/messaging-gateway/10-7-3/Spam_5/enabling-dkim-signing-for-a-domain-v27452323-d419e2546.html
-   - Administration > Settings > Certificates > Domain Keys 
+   - Administration > Settings > Certificates > Domain Keys
+ * Kerio Connect
+   - https://support.kerioconnect.gfi.com/hc/en-us/articles/360015188320-Configuring-DNS-for-DKIM-in-Kerio-Connect
 
 ```
 "v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb..."
