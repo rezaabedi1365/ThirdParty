@@ -30,6 +30,7 @@ Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Head
    - Administration > Settings > Certificates > Domain Keys
  * Kerio Connect
    - https://support.kerioconnect.gfi.com/hc/en-us/articles/360015188320-Configuring-DNS-for-DKIM-in-Kerio-Connect
+   - https://support.kerioconnect.gfi.com/hc/en-us/articles/360015187880-Adding-DKIM-and-DMARC-Records-to-Kerio-Connect
 
 ```
 "v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb..."
