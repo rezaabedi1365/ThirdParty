@@ -1,6 +1,6 @@
 https://www.netafraz.com/blog/how-to-set-up-spf-dkim-dmarc/
 
-# sfp
+# SPF
 ```
 "v=spf1 a mx ip4:185.78.22.0/25 include:_auxspf.axspace.com ~all"
 ```
