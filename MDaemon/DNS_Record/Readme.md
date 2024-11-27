@@ -17,15 +17,17 @@ nslookup -type=txt example.com
 # DKIM 
 Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Header and it will be check in dns DKIM Record.
 * Security Manager -> Sender Authentication -> DKIM Signing > Create new puplic and private keys
-  
+* this file saved as : c:\MDaemon\PEM\MDaemon\dns_readme.txt
+
 ```
-v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb...
+"v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb..."
+"Rr/gargtihgihasdrgujghliuagsdfivgbjhsdgvfbhvgsafh..."
 ```
 verify:
 ```
 nslookup
 set q=txt
-selector._domainkey.example.com
+selectorexample._domainkey.example.com
 ```
 
 # DMARC  Policy
