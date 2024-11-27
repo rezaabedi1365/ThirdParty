@@ -52,6 +52,6 @@ x._domainkey.example.com
 
 # Google Search Consol
 * https://search.google.com/search-console/about
-1- crate gmail
-2- login to gmail in google search consol
-3- ...
+- 1- crate gmail
+- 2- login to gmail in google search consol
+- 3- ...
