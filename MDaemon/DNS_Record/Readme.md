@@ -19,8 +19,12 @@ nslookup -type=txt example.com
 ```
 # DKIM 
 Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Header and it will be check in dns DKIM Record.
-* Security Manager -> Sender Authentication -> DKIM Signing > Create new puplic and private keys
-* this file saved as : c:\MDaemon\PEM\MDaemon\dns_readme.txt
+* MDaemon
+  - Security Manager -> Sender Authentication -> DKIM Signing > Create new puplic and private keys
+  - this file saved as : c:\MDaemon\PEM\MDaemon\dns_readme.txt
+ * Exchange
+   - By Default Exchange not support DKIM
+   - https://powerdmarc.com/dkim-on-prem-exchange-server-setup/
 
 ```
 "v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb..."
