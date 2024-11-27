@@ -45,7 +45,8 @@ x._domainkey.example.com
 ```
 
 #  MXtool
-https://mxtoolbox.com/SuperTool.aspx
+* https://mxtoolbox.com/SuperTool.aspx
+
 ![image](https://github.com/user-attachments/assets/d2b55635-ceaa-40d6-ada7-e00ed24db92e)
 
 
