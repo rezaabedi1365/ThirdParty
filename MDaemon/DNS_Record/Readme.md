@@ -16,7 +16,7 @@ Create Puplickey in your MDaemon . MDaemon send mail with this Publickey in Head
 * Security Manager -> Sender Authentication -> DKIM Signing > Create new puplic and private keys
   
 ```
-v=DKIM1 p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb...
+v=DKIM1; p=kkhrtghdcghlhsdgkhdfihgdfhgjkhklgbfjgb...
 ```
 verify:
 ```
@@ -40,3 +40,10 @@ x._domainkey.example.com
 #  MXtool
 https://mxtoolbox.com/SuperTool.aspx
 ![image](https://github.com/user-attachments/assets/d2b55635-ceaa-40d6-ada7-e00ed24db92e)
+
+
+# Google Search Consol
+https://search.google.com/search-console/about
+1- crate gmail
+2- login to gmail in google search consol
+3- ...
