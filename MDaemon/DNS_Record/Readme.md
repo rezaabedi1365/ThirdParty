@@ -29,7 +29,8 @@ selector._domainkey.example.com
 ```
 
 # DMARC  Policy
-
+DMARC Record Generator
+* https://easydmarc.com/tools/dmarc-record-generator
 ```
 
 ```
