@@ -31,7 +31,10 @@ selector._domainkey.example.com
 # DMARC  Policy
 DMARC Record Generator
 * https://easydmarc.com/tools/dmarc-record-generator
+![image](https://github.com/user-attachments/assets/d1d46195-c494-4da4-9563-9dd7d58f8262)
+ 
 ```
+v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc@example.com;ruf=mailto:dmarcfailure@example.com;ri=86400;aspf=r;adkim=r;fo=1
 
 ```
 verify:
