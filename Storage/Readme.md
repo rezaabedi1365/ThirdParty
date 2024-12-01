@@ -48,9 +48,10 @@
 ----------------------------------------------------------
 ### iSCSI Presentation
 Logical Volume
-  * Create virtual Disk with RAID
-      - Create Volume
-      - Volume Mapping
+  * Create Pool 
+      - Create Disk Group with RAID
+          + create volume
+          + Volume Mapping
   * add iscsi initiator
       - to Windows
       - to vmware
@@ -62,6 +63,8 @@ Requerment
   * HBA
   * VSAN
 
+----------------------------------------------------------
+IPRender application for test troughput
 
     
 
