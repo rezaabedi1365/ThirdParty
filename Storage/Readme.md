@@ -1,6 +1,7 @@
-### Host Connector
+### Host connectivity
    * FC    16Gb
    * iSCSI 10Gb
+   * SAS   12Gb for Encluser
 ### Disk connector
    * SAS 12GB
    * SATA
