@@ -19,15 +19,10 @@
         + 6TB
 * SFF
   - 10K , 15K
-        + 72GB
-        + 146GB
-        + 300GB
-        +  450GB
-        + 600GB
-        + 900GB
-        + 1200GB
-    - 5400/7200
-        + 1TB 
+       + 720
+       + 
+    
+
 
   
 ----------------------------------------------------------
@@ -37,3 +32,13 @@ Logical Volume
         - volume mapping
 add iscsi initiator
         - add target ip and discover on port 3260
+    
+   -         + 72GB
+        + 146GB
+        + 300GB
+        + 450GB
+        + 600GB
+        + 900GB
+        + 1200GB
+    - 5400/7200
+        + 1TB 
