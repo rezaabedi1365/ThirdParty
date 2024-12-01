@@ -48,9 +48,10 @@
 ### iSCSI Presentation
 Logical Volume
   * Create virtual Disk with RAID
-        - Create volume
-        - volume mapping
+      - Create Volume
+      - Volume Mapping
   * add iscsi initiator
-        - add target ip and discover on port 3260
+      - add target ip and discover on port 3260
+
     
 
