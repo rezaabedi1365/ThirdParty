@@ -52,7 +52,16 @@ Logical Volume
       - Create Volume
       - Volume Mapping
   * add iscsi initiator
-      - add target ip and discover on port 3260
+      - to Windows
+      - to vmware
+      - to linux
+  * add target ip and discover on port 3260
+----------------------------------------------------------
+### iSCSI Presentation
+Requerment
+  * HBA
+  * VSAN
+
 
     
 
