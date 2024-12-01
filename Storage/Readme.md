@@ -1,8 +1,20 @@
+### Host Connector
+   * FC    16Gb
+   * iSCSI 10Gb
+### Disk connector
+   * SAS 12GB
+   * SATA
+      - SATA |    1.5Gb
+      - SATA ||   3Gb
+      - SATA |||  6Gb
+   * USB
+      - USB 1.1 12Mb
+      - USB 2   480Mb
+      - USB3.2  GEN1 5GB
+      - USB3.2  GEN2 10Gb
 
-- FC    16Gb
-- SAS   12Gb
-- iSCSI 10Gb
-    *  Port 3260
+  
+  
  
 ----------------------------------------------------------
 * LFF
