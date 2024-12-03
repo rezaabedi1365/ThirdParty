@@ -2,12 +2,21 @@
 
 ![image](https://github.com/user-attachments/assets/78316f2f-f601-40d4-8d83-754c987fcce1)
 ### SAN
+* Protocols
+    - FC
+    - iSCSI
+
 * Key Characteristics of SANs:
     - Block-Level Access: SANs provide direct access to storage blocks, which is advantageous for applications requiring fast, low-latency data retrieval.
     - Performance: SANs are designed to meet the rigorous demands of enterprise-level applications, ensuring reliable and high-speed data access.
     - Scalability: SANs offer greater scalability by connecting multiple storage devices, making them suitable for businesses with expanding storage needs.
     
 ### NAS:
+* Protocols
+    - SMB
+    - CIFS
+    - NFS
+
 * Key Characteristics of
     - File-Level Access: NAS provides file-level access, ideal for environments where collaborative work and content sharing are paramount.
     - Simplicity: NAS solutions offer straightforward setups and intuitive interfaces, making them accessible to users with varying levels of technical expertise.
