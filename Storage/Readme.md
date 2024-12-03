@@ -1,6 +1,12 @@
 # What’s the Diff: NAS vs. SAN
 
 ![image](https://github.com/user-attachments/assets/78316f2f-f601-40d4-8d83-754c987fcce1)
+NAS:
+* Key Characteristics of NAS:
+
+    - File-Level Access: NAS provides file-level access, ideal for environments where collaborative work and content sharing are paramount.
+    - Simplicity: NAS solutions offer straightforward setups and intuitive interfaces, making them accessible to users with varying levels of technical expertise.
+    - Scalability: While NAS devices can be expanded by adding more drives, there may be limitations in terms of performance and scalability for large-scale enterprise use.
 
 # SAN Storage 
 ------------------------------------------------------------
