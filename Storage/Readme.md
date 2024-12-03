@@ -16,6 +16,8 @@
     - SMB
     - CIFS
     - NFS
+![image](https://github.com/user-attachments/assets/0a5932f3-c2b2-4c7d-b721-03915306df59)
+
 
 * Key Characteristics of
     - File-Level Access: NAS provides file-level access, ideal for environments where collaborative work and content sharing are paramount.
