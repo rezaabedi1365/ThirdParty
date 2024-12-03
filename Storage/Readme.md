@@ -1,3 +1,9 @@
+# What’s the Diff: NAS vs. SAN
+
+![image](https://github.com/user-attachments/assets/78316f2f-f601-40d4-8d83-754c987fcce1)
+
+# SAN Storage 
+------------------------------------------------------------
 ### Host connectivity
    * FC    16Gb
    * iSCSI 10Gb
@@ -14,10 +20,27 @@
       - USB3.2  GEN1 5GB
       - USB3.2  GEN2 10Gb
 
-  
+ ----------------------------------------------------------
+### iSCSI Presentation
+Logical Volume
+  * Create Pool 
+      - Create Disk Group with RAID
+          + create volume
+          + Volume Mapping
+  * add iscsi initiator
+      - to Windows
+      - to vmware
+      - to linux
+  * add target ip and discover on port 3260
+----------------------------------------------------------
+### FC Presentation
+Requerment
+  * HBA
+  * VSAN 
   
  
-----------------------------------------------------------
+*********************************************************************
+### Hard Disk
 * LFF
   - 10K , 15K
        + 146GB
@@ -45,23 +68,7 @@
 
 
   
-----------------------------------------------------------
-### iSCSI Presentation
-Logical Volume
-  * Create Pool 
-      - Create Disk Group with RAID
-          + create volume
-          + Volume Mapping
-  * add iscsi initiator
-      - to Windows
-      - to vmware
-      - to linux
-  * add target ip and discover on port 3260
-----------------------------------------------------------
-### iSCSI Presentation
-Requerment
-  * HBA
-  * VSAN
+
 
 ----------------------------------------------------------
 IPRender application for test troughput
