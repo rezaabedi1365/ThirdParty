@@ -1,0 +1,9 @@
+dpkg -i <packge name>
+
+/opt/splunkforwarder/bin/splunk start
+
+/opt/splunkforwarder/bin/splunk enable boot-start
+
+/opt/splunkforwarder/bin/splunk set deploy-poll 10.10.10.11:8089
+
+/opt/splunkforwarder/bin/splunk restart
