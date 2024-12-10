@@ -1,3 +1,5 @@
+
+# Linux 
 ### Method1
 - use splunk command to config
 - you need to admin password
@@ -28,4 +30,9 @@ sudo /opt/splunkforwarder/bin/splunk stop
 sudo /opt/splunkforwarder/bin/splunk disable boot-start
 sudo apt purge splunkforwarder
 sudo rm -rf /opt/splunkforwarder
+```
+# Windows
+```
+Invoke-WebRequest -Uri http://10.10.10.11:3333/splunkuf.msi -OutFile ${env:tmp}\splunkuf.msi
+msiexec.exe /i ${env:tmp}\splunkuf.msi AGREETOLICENSE=Yes DEPLOYMENT_SERVER="10.10.10.12:8089" SPLUNKUSERNAME=uf-admin GENRANDOMPASSWORD=1 /quiet  
 ```
