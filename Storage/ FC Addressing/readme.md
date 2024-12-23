@@ -10,7 +10,7 @@ https://techtik.com/2017/06/13/fc-addressing/
       * iSCSI
           +  iSCSI Initiator
           +  iSCSI Target 
-      * FCIP [For Long Distance]
+      * FCIP [For Long Distance and use in WAN]
 -----------------------------------------------------------------------
 ### Zonning
   - Hard Zonning
