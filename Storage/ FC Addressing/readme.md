@@ -5,12 +5,12 @@ https://techtik.com/2017/06/13/fc-addressing/
   - FC SAN
       * WWNN [World Wide Node Name]:  Specify address for Node (Device)
       * WWPN [World Wide Port Name]:  Specify address for each ports
-  - FCoE SAN
+  - FCoE SAN [ For Short Distance ]
   - IP SAN
       * iSCSI
           +  iSCSI Initiator
           +  iSCSI Target 
-      * FCIP
+      * FCIP [For Long Distance]
 -----------------------------------------------------------------------
 ### Zonning
   - Hard Zonning
