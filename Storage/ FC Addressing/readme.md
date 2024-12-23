@@ -12,7 +12,7 @@ https://techtik.com/2017/06/13/fc-addressing/
           +  iSCSI Target 
       * FCIP [For Long Distance and use in WAN]
 -----------------------------------------------------------------------
-### Zonning
+### Zoning
   - Hard Zonning
   - Soft Zonning
 
