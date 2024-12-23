@@ -16,3 +16,12 @@ https://techtik.com/2017/06/13/fc-addressing/
   - Hard Zonning
   - Soft Zonning
 
+FC Ports
+  -  F_Port  
+  -  N_Port  
+  -  E_Port
+
+![image](https://github.com/user-attachments/assets/47decf01-ce6b-4db7-be77-b1ed1642a5e3)
+
+
+
