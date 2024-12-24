@@ -11,7 +11,7 @@ cd /usr/lib/vmware-TlsReconfigurator/EsxTlsReconfigurator/
 ./reconfigureEsx vCenterHost -h host-04.faradis.net -u Administrator@vsphere.local -p TLSv1.2
 ```
 
-### DiSable TLS Version ESXi Hosts
+### Disable TLS Version ESXi Hosts
 https://superuser.com/questions/1328395/esxi-tls-configuration
 - For port 443 (HTTPS) on ESXi
 
