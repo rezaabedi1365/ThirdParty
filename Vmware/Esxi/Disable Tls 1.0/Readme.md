@@ -1,4 +1,9 @@
 
+```
+./reconfigureEsx vCenterHost -h host-04.faradis.net -u Administrator@vsphere.local -p TLSv1.2
+```
+
+
 https://superuser.com/questions/1328395/esxi-tls-configuration
 For port 443 (HTTPS) on ESXi
         vi /etc/vmware/rhttpproxy/config.xml
