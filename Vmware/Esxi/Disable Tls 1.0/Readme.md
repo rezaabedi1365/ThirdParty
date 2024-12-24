@@ -1,4 +1,11 @@
 Bahmani
+### Disable TLS Versions on ESXi Hosts
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-BDCE47DD-8AD2-4C98-94FF-7769D0BEE1C2.html
+- To view the current TLS versions, you can connect to an ESXi host and run openssl commands similar to the following:
+   + openssl s_client -tls1 -connect localhost:443 | head -5
+   + openssl s_client -tls1_1 -connect localhost:443 | head -5
+   + openssl s_client -tls1_2 -connect localhost:443 | head -5
+     
 ```
 cd /usr/lib/vmware-TlsReconfigurator/EsxTlsReconfigurator/
 ./reconfigureEsx vCenterHost -h host-04.faradis.net -u Administrator@vsphere.local -p TLSv1.2
@@ -35,10 +42,3 @@ https://knowledge.broadcom.com/external/article/320798/disabling-static-ciphers-
 
 
 --------------------------------------------------------------------------------------------------------------------
-
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-BDCE47DD-8AD2-4C98-94FF-7769D0BEE1C2.html
-To view the current TLS versions, you can connect to an ESXi host and run openssl commands similar to the following:
-openssl s_client -tls1 -connect localhost:443 | head -5
-openssl s_client -tls1_1 -connect localhost:443 | head -5
-openssl s_client -tls1_2 -connect localhost:443 | head -5
-
