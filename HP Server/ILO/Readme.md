@@ -1,3 +1,4 @@
+https://support.hpe.com/connect/s/product?language=en_US&kmpmoid=1010145467&tab=driversAndSoftware
 
 https://www.cloudavid.com/pvm-env-howto-update-hp-ilo-firmware/
 
