@@ -1,10 +1,10 @@
 ### Update ILO 
 
-G 10
+* G 10
   - ilo 5 
-G 9
+* G 9
   - ilo 4
-G 8
+* G 8
   - ilo 4
 
 
