@@ -1,5 +1,7 @@
 
 ### Create LUN Datastore
+![image](https://github.com/user-attachments/assets/3dbf2f75-aee1-4c35-889a-a1396ead54bf)
+
 ![image](https://github.com/user-attachments/assets/ef833312-515a-47a6-a275-b8bebbdd2db3)
 
 ![image](https://github.com/user-attachments/assets/73320b6e-b92c-4ebc-9475-5d6b965c74da)
