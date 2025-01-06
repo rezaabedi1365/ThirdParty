@@ -8,4 +8,7 @@ https://rayasec.com/configuring-lacp-in-distributed-switch/
 
 ![LAG-5](https://github.com/user-attachments/assets/495e0673-2d82-432a-b6f6-0298e3771894)
 
+![LAG-6](https://github.com/user-attachments/assets/f8d342a6-f537-4066-8f98-848b17b027c4)
+
+
 
