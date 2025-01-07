@@ -7,5 +7,6 @@
 #### impliment
   - hybrid
   - all flash
+    
 + best practic: can seperate trafic vsan on two 10gig
 -------------------------------------------------------------------
