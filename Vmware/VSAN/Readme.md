@@ -8,5 +8,9 @@
   - hybrid
   - all flash
     
-+ best practic: can seperate trafic vsan on two 10gig
+
 -------------------------------------------------------------------
+step 1 )
+  - create VDS
+    + add hosts to VDS
+  - uplink [gig1,2] vms and uplink [gig3,4] vsan 
