@@ -4,6 +4,6 @@
   - two-node vsan cluster
   - monitoring vsan
 
-* impliment
+#### impliment
   - hybrid
   - all flash
