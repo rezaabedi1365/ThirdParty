@@ -13,4 +13,7 @@
 step 1 )
   - create VDS
     + add hosts to VDS
-  - uplink [gig1,2] vms and uplink [gig3,4] vsan 
+  -  uplink [gig1,2] vms and uplink [gig3,4] vsan
+    + assign uplink to port grroup with Teaming and failover
+
+     
