@@ -1,6 +1,8 @@
 
 ![image](https://github.com/user-attachments/assets/ee8fedcc-1cf0-4817-88ca-47242da37915)
 ### Install on Ubuntu
+https://netboxlabs.com/docs/netbox/en/stable/installation/1-postgresql/
+
 https://www.howtoforge.com/how-to-install-netbox-network-documentation-and-management-tool-on-ubuntu-22-04/
 https://www.atlantic.net/dedicated-server-hosting/how-to-install-netbox-irm-on-ubuntu-22-04/
 
