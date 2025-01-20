@@ -1,3 +1,10 @@
+### Storage Policy
+
+* One Failure to Tolerate
+* IOPS Limit
+* Object Space Reservation
+
+
 ### PFTT & Stripe Width
 
 * RAID1
@@ -20,5 +27,13 @@
    - RAID6=PFTT2   Minimum 6 Host - Recommended 7 Host
      + Create 3 morror + 2 witness
      + each 100 Gig 150 Gig used
-   
+
+![image](https://github.com/user-attachments/assets/13f1ea63-7791-47b8-94aa-ba1aee6a4a62)
+
+
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/138152cf-d7d9-4e92-ac69-41b8da2beb5e)
