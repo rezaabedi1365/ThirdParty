@@ -1,4 +1,4 @@
-### PFTT
+### PFTT & Stripe Width
 
 * RAID1
    - RAID1=PFTT1   Minimum 3 Host - Recommended 4 Host
