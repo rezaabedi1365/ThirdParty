@@ -6,6 +6,8 @@
 3- New Distribute Port Group > [VSAN-Portgroup] > vlan[10]>
 4- add vmkernel adapter to VSAN-Portgroup with vsan ability and assign ip address
 
+````
+
 ### VSAN
   1- create vsan cluster
 
