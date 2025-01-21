@@ -1,5 +1,5 @@
 ### Prequisit
-1- create DVS with Vmkernel vsan ability
+create DVS with Vmkernel vsan ability
 ```
 1- New Distributed switch
 2- Add and manage hosts> Add Hosts > assign uplinks
