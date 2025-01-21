@@ -10,7 +10,15 @@ create DVS with Vmkernel vsan ability
 
 ### VSAN
   1- create vsan cluster
-
+    - Topology
+       single site VSAN cluster
+       Two nod vSAN cluster
+       vSAN stretched cluter
+    -Service 
+       Compression 
+       Deduplication 
+       Encryption
+       
   2- add license
 
   3- configure cluster
