@@ -1,4 +1,4 @@
-### VSAN
+### VSAN Consept
 Requirements
   - Hardware requirment
      + Dedicate unformat ssd . 1 ssd in hybrid mod 10%
@@ -7,6 +7,7 @@ Requirements
      + if you have HA in cluster you must temporary disable it
      + 3 to 64 host
      + 5 disk group per cluster
+     + 8 disk per each disk group
      + cluster sizing : calculate failure
      +   * vsan readynode sizer
          * raid 5>  2n+2
