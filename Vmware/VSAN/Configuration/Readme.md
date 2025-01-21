@@ -1,6 +1,6 @@
 ### Prequisit
 1- create DVS with Vmkernel vsan ability
-    - 2
+
 
 ### VSAN
   1- create vsan cluster
@@ -8,6 +8,7 @@
   2- add license
 
   3- configure cluster
+  
     - Claim disks
 
 ### Scale up 
