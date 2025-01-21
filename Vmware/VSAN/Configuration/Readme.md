@@ -7,7 +7,7 @@
   2- add license
 
   3- configure cluster
-    - Claim disks
+      - Claim disks
 
 ### Scale up 
 1- add disk group or add disk to exist disk group
