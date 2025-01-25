@@ -36,3 +36,11 @@ sudo rm -rf /opt/splunkforwarder
 Invoke-WebRequest -Uri http://10.10.10.11:3333/splunkuf.msi -OutFile ${env:tmp}\splunkuf.msi
 msiexec.exe /i ${env:tmp}\splunkuf.msi AGREETOLICENSE=Yes DEPLOYMENT_SERVER="10.10.10.12:8089" SPLUNKUSERNAME=uf-admin GENRANDOMPASSWORD=1 /quiet  
 ```
+-----------------------------------------------------------------------------------------------------------------------------
+### Reset Setting
+```
+sudo /opt/splunkforwarder/bin/splunk stop
+sudo /opt/splunkforwarder/bin/splunk clone-prep-clear-config
+sudo /opt/splunkforwarder/bin/splunk enable
+sudo /opt/splunkforwarder/bin/splunk restart
+```
