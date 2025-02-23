@@ -6,7 +6,8 @@ https://novablog.ir/manage-partitions-with-cmd/
 
 ![image](https://github.com/user-attachments/assets/ea8e6689-47c0-4613-9995-cece34fdb1f7)
 
-![image](https://github.com/user-attachments/assets/bcac46ad-33bb-460d-94b5-bc4d749aedcd)
+![image](https://github.com/user-attachments/assets/5a1e0673-1bd7-4ae6-b9d4-a3110b2ad764)
+
 
 
 
