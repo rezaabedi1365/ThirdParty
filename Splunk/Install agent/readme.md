@@ -23,6 +23,10 @@ echo "targetUri = 10.10.10.11:8089" >> /opt/splunkforwarder/etc/system/local/dep
 sudo chown splunkfwd:splunkfwd /opt/splunkforwarder/etc/system/local/deploymentclient.conf
 /opt/splunkforwarder/bin/splunk restart
 ```
+### verity
+```
+nano /opt/splunkforwarder/etc/system/local/server.conf
+```
 
 ### Unistall
 ```
