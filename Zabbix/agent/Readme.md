@@ -80,3 +80,8 @@ RefreshActiveChecks=120
 # StartAgents=0  ; if you want only active mode, set this to 0
 
 ```
+verify:
+- on zabbix server
+```
+zabbix_get -s <IP-Client> -k system.hostname
+```
