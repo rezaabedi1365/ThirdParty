@@ -1,4 +1,4 @@
-### assign 4 disk to vmware
+### Assign 4 disk in vmware
 - Disk1: OS
 - Disk2: /opt
 - Disk3: /warmdb
@@ -17,7 +17,7 @@ cfdisk /dev/sdc
 cfdisk /dev/sdd
 ```
 
-### lvm configuration
+### LVM configuration
 - /opt
 ```
 pvcreate /dev/sdb1
