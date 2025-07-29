@@ -1,4 +1,4 @@
-# Edit Zabbix config file in docker container
+#### Edit Zabbix config file in docker container
 ```
 docker cp CONTAINER:/etc/zabbix/zabbix_server_vmware.conf .
 ```
@@ -15,7 +15,7 @@ docker cp zabbix_server_vmware.conf CONTAINER:/etc/zabbix/zabbix_server_vmware.c
 docker restart CONTAINER
 ```
 
-# Verify on host
+### Verify on host
 ```
 ps aux | grep vmware
 ```
