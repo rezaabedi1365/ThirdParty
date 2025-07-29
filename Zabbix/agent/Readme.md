@@ -1,6 +1,14 @@
 # install agent on windown
-<img width="576" height="207" alt="image" src="https://github.com/user-attachments/assets/df271d23-6d4f-433c-9280-2d137505e631" />
-
+- Active Mode
+   * Listen 10051 on server
+   * Send agent to server
+- Passive Mode
+   * Linsten 10050 on client
+   * pull data on server from agenet
+ - Mixed
+   * Listen 10051 on Server
+   * Listen 10050 on Client
+   
 ### install with zip
 C:\zabbix\conf\zabbix_agentd.conf
 ```
