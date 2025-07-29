@@ -19,3 +19,4 @@ docker restart CONTAINER
 ```
 ps aux | grep vmware
 ```
+<img width="1037" height="181" alt="image" src="https://github.com/user-attachments/assets/c11d8a6c-2b24-48b5-ba78-97146b44823e" />
