@@ -1,9 +1,15 @@
-### install agent on windown
+# install agent on windown
+<img width="576" height="207" alt="image" src="https://github.com/user-attachments/assets/df271d23-6d4f-433c-9280-2d137505e631" />
+
+### install with zip
 C:\zabbix\conf\zabbix_agentd.conf
 ```
 Server=192.168.1.100
 ServerActive=192.168.1.100
 Hostname=MY-WINDOWS-PC
+#in passive mode
+#ListenPort=10050  # پورت پیش‌فرض Agent
+#StartAgents=3     # تعداد پردازش‌های همزمان (optional)
 ```
 ```
 cd C:\zabbix\bin\windows\amd64
@@ -14,6 +20,15 @@ zabbix_agentd.exe --start
 ```
 cd C:\zabbix\bin\windows\amd64
 zabbix_agentd.exe --uninstall
+```
+### install with msi
+```
+msiexec /i zabbix_agent2-6.0.x-windows-amd64-openssl.msi /quiet ^
+ SERVER=192.168.1.100 ^
+ SERVERACTIVE=192.168.1.100 ^
+ HOSTNAME=MyWindowsHost ^
+ INSTALLFOLDER="C:\Program Files\Zabbix Agent 2"
+ #LISTENPORT=10500 # in passive mode
 ```
 ### install with group policy
 
@@ -85,3 +100,19 @@ verify:
 ```
 zabbix_get -s <IP-Client> -k system.hostname
 ```
+# Firewall 
+Zabbix agent passiv 10050 on server
+```
+New-NetFirewallRule -DisplayName "Zabbix Agent Passive" -Direction Inbound -Protocol TCP -LocalPort 10050 -Action Allow
+```
+zabbix agent active 10051 on client if use outbound roule
+```
+New-NetFirewallRule -DisplayName "Zabbix Agent Active Out" -Direction Outbound -Protocol TCP -RemotePort 10051 -Action Allow
+```
+
+# start service
+```
+sc start "Zabbix Agent"
+sc start "Zabbix Agent 2"
+```
+# verify
