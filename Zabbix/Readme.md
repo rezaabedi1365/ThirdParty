@@ -3,3 +3,5 @@ https://www.zabbix.com/download?zabbix=7.0&os_distribution=ubuntu&os_version=22.
 
 # Installation from containers
 https://www.zabbix.com/documentation/current/en/manual/installation/containers
+
+# install from docker-compose
