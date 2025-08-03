@@ -12,7 +12,7 @@ https://www.zabbix.com/documentation/current/en/manual/installation/containers
   git clone https://github.com/zabbix/zabbix-docker.git
   ```
   ```
-  docker compose -f docker-compose_v3_alpine_mysql_latest.yaml up -d
+  docker compose -f docker-compose_v3_alpine_pgsql_latest.yaml up -d
   ```
 ## with Grafana
 - https://github.com/akmalovaa/zabbix-docker
