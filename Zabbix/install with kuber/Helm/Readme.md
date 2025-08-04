@@ -26,15 +26,14 @@ kubectl get pods -n monitoring
 
 ### Tshoot
 ```
+#kubectl describe node <node-name>
 kubectl describe pod zabbix-zabbix-web-6f4b768545-j9h28 -n monitoring
 ```
 
 ```
-kubectl describe node <node-name>
+kubectl logs zabbix-postgresql-0 -n monitoring
 ```
+
 ```
 kubectl exec -n monitoring -it zabbix-zabbix-web-6f4b768545-j9h28 -- nslookup google.com
-```
-```
-kubectl logs zabbix-postgresql-0 -n monitoring
 ```
