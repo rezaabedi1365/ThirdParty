@@ -47,3 +47,8 @@ kubectl logs zabbix-postgresql-0 -n monitoring
 ```
 kubectl exec -n monitoring -it zabbix-zabbix-web-6f4b768545-j9h28 -- nslookup google.com
 ```
+### auto Scale
+```
+kubectl autoscale deployment zabbix-zabbix-web -n monitoring --min=2 --max=10 --cpu-percent=50
+
+```
