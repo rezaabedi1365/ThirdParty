@@ -14,7 +14,17 @@ kubectl get pods -n monitoring
 ```
 kubectl port-forward svc/zabbix-web -n monitoring 8080:8080
 ```
-verify:
+### verify:
+```
+kubectl get namespaces
+```
+```
+kubectl get pods -n monitoring
+```
+
+
+
+### Tshoot
 ```
 kubectl describe pod zabbix-zabbix-web-6f4b768545-j9h28 -n monitoring
 ```
@@ -24,4 +34,7 @@ kubectl describe node <node-name>
 ```
 ```
 kubectl exec -n monitoring -it zabbix-zabbix-web-6f4b768545-j9h28 -- nslookup google.com
+```
+```
+kubectl logs zabbix-postgresql-0 -n monitoring
 ```
