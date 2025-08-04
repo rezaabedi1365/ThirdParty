@@ -11,12 +11,17 @@ helm repo update
 helm install zabbix zabbix-community/zabbix --namespace monitoring --create-namespace
 kubectl get pods -n monitoring
 ```
-- Port Forward
+### Port Forward
 ```
 kubectl get svc -n monitoring
 ```
+- method1
 ```
 kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
+```
+- method2
+```
+nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-forward.log 2>&1 &
 ```
 
 ### verify:
