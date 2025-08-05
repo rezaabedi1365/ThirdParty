@@ -77,11 +77,11 @@ nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-fo
     kubectl get svc --all-namespaces | grep haproxy
     kubectl get pods --all-namespaces | grep haproxy
     ```
+    
     <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
-
     <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/d7c254be-da63-4f66-ba22-529628b259db" />
 
--------------------------------------------------------------------------------------------------------------------------
+
 ```
 apiVersion: networking.k8s.io/v1
 kind: Ingress
