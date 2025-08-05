@@ -81,7 +81,8 @@ kubectl get pods --all-namespaces | grep haproxy
 
 <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
 
-<img width="859" height="47" alt="image" src="https://github.com/user-attachments/assets/fdf2dd39-01ef-4983-821e-ea2e9f5d360d" />
+<img width="1039" height="48" alt="image" src="https://github.com/user-attachments/assets/0f1267f5-cd6e-4284-b0d0-13c524da81ca" />
+
 
 
 
