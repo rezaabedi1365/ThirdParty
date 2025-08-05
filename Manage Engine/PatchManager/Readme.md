@@ -20,9 +20,6 @@ Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | 
 <img width="1030" height="79" alt="image" src="https://github.com/user-attachments/assets/e6652245-bd14-4d0d-ae67-909b544a83a3" />
 
 
-
-
-
 ```
 msiexec /x {6AD2231F-FF48-4D59-AC26-405AFAE23DB7} /qn
 ```
