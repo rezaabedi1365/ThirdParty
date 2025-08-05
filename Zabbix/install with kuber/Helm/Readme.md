@@ -59,6 +59,13 @@ spec:
 
 
 ```
+```
+kubectl apply -f zabbix-ingress.yaml
+```
+```
+kubectl get ingress -n your-zabbix-namespace
+kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
+```
 ### Kubernetes Service (NodePort)
 ```
 apiVersion: v1
@@ -77,6 +84,13 @@ spec:
     nodePort: 30080   # پورت باز روی نودهای کلاستر برای دسترسی خارجی
 
 ```
+```
+kubectl apply -f zabbix-ingress.yaml
+```
+```
+kubectl get ingress -n your-zabbix-namespace
+kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
+```
 ### Kubernetes Service (loadbalancer)
 ```
 apiVersion: v1
@@ -93,6 +107,13 @@ spec:
     port: 80          # پورت سرویس داخلی
     targetPort: 80    # پورت داخل پاد Zabbix
 
+```
+```
+kubectl apply -f zabbix-ingress.yaml
+```
+```
+kubectl get ingress -n your-zabbix-namespace
+kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
 
 # verify:
