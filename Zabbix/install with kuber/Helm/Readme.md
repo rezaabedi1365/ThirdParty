@@ -66,8 +66,10 @@ kubectl apply -f zabbix-ingress.yaml
 ```
 kubectl get ingress -A
 kubectl get ingress -n your-zabbix-namespace
+kubectl describe ingress <ingress-name> -n <namespace>
 kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
+
 ### Kubernetes Service (NodePort)
 ```
 apiVersion: v1
@@ -90,10 +92,10 @@ spec:
 kubectl apply -f zabbix-ingress.yaml
 ```
 ```
-kubectl get ingress -A
-kubectl get ingress -n your-zabbix-namespace
-kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
+kubectl get services --all-namespaces
 ```
+<img width="924" height="140" alt="image" src="https://github.com/user-attachments/assets/fdde6600-4966-4939-b3af-0f5fd1bc9c35" />
+
 ### Kubernetes Service (loadbalancer)
 ```
 apiVersion: v1
