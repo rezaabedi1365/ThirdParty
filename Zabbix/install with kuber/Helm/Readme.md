@@ -25,7 +25,7 @@ kubectl get pods -n monitoring
 ```
 kubectl get svc -n monitoring
 ```
-### Nodport
+### kubectl port-forward
 - method1
 ```
 kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
@@ -34,47 +34,67 @@ kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
 ```
 nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-forward.log 2>&1 &
 ```
-### HAProxy
+### Ingress Controller (HAProxy, NGINX)
 ```
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: zabbix-web-ingress
-  namespace: monitoring
+  name: zabbix-ingress
+  namespace: your-zabbix-namespace
+  annotations:
+    kubernetes.io/ingress.class: "haproxy"
 spec:
-  ingressClassName: haproxy
   rules:
-  - host: zabbix.faradis.net
+  - host: zabbix.example.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: zabbix-zabbix-web
+            name: zabbix-service
             port:
               number: 80
 
+
 ```
-### HAProxy Loadbalancer
+### Kubernetes Service (NodePort)
 ```
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: zabbix-service
+  namespace: your-zabbix-namespace
 spec:
+  type: NodePort
   selector:
-    app: my-app
+    app: zabbix
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
+  - protocol: TCP
+    port: 80          # پورت داخلی سرویس
+    targetPort: 80    # پورت داخل پاد Zabbix
+    nodePort: 30080   # پورت باز روی نودهای کلاستر برای دسترسی خارجی
+
+```
+### Kubernetes Service (loadbalancer)
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: zabbix-loadbalancer
+  namespace: your-zabbix-namespace
+spec:
   type: LoadBalancer
+  selector:
+    app: zabbix
+  ports:
+  - protocol: TCP
+    port: 80          # پورت سرویس داخلی
+    targetPort: 80    # پورت داخل پاد Zabbix
 
 ```
 
-### verify:
+# verify:
 ```
 kubectl get namespaces
 ```
@@ -84,7 +104,7 @@ kubectl get pods -n monitoring
 
 
 
-### Tshoot
+# Tshoot
 ```
 #kubectl describe node <node-name>
 kubectl describe pod zabbix-zabbix-web-6f4b768545-j9h28 -n monitoring
@@ -97,7 +117,7 @@ kubectl logs zabbix-postgresql-0 -n monitoring
 ```
 kubectl exec -n monitoring -it zabbix-zabbix-web-6f4b768545-j9h28 -- nslookup google.com
 ```
-### auto Scale
+# auto Scale
 ```
 kubectl autoscale deployment zabbix-zabbix-web -n monitoring --min=2 --max=10 --cpu-percent=50
 
