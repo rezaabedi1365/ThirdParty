@@ -69,7 +69,39 @@ kubectl get ingress -n your-zabbix-namespace
 kubectl describe ingress <ingress-name> -n <namespace>
 kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
+- With TLS
+```
+kubectl create secret tls zabbix-tls-secret --cert=path/to/tls.crt --key=path/to/tls.key -n monitoring
+```
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: zabbix-web-ingress
+  namespace: monitoring
+  annotations:
+    kubernetes.io/ingress.class: "haproxy"
+spec:
+  tls:
+  - hosts:
+    - zabbix.faradis.net
+    secretName: zabbix-tls-secret
+  rules:
+  - host: zabbix.faradis.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: zabbix-zabbix-web
+            port:
+              number: 80
 
+```
+```
+kubectl apply -f zabbix-ingress-TLS.yaml
+```
 ### Kubernetes Service (NodePort)
 ```
 apiVersion: v1
