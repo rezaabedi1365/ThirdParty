@@ -14,15 +14,11 @@ show Product Code
 ```
 Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | Select-Object Name, IdentifyingNumber
 ```
-```
 
-```
-Name                           IdentifyingNumber
-----                           -----------------
-ManageEngine Patch Manager Plus Agent  {12345678-ABCD-1234-ABCD-1234567890AB}
-```
+<img width="1030" height="79" alt="image" src="https://github.com/user-attachments/assets/e6652245-bd14-4d0d-ae67-909b544a83a3" />
 
----
+
+
 
 
 ```
