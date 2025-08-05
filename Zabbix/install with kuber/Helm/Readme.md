@@ -113,14 +113,12 @@ spec:
     targetPort: 80    # پورت داخل پاد Zabbix
 
 ```
+
 ```
-kubectl apply -f zabbix-ingress.yaml
+kubectl get services --all-namespaces
 ```
-```
-kubectl get ingress -A
-kubectl get ingress -n your-zabbix-namespace
-kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
-```
+<img width="932" height="154" alt="image" src="https://github.com/user-attachments/assets/e9999634-5d62-48dc-8650-4a4d3e92e1c6" />
+
 
 # verify:
 ```
