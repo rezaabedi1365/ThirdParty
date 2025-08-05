@@ -24,6 +24,7 @@ kubectl get pods -n monitoring
  
 ```
 kubectl get svc -n monitoring
+kubectl get svc -A -o wide
 ```
 ### kubectl port-forward
 - method1
