@@ -11,10 +11,12 @@ helm repo update
 helm install zabbix zabbix-community/zabbix --namespace monitoring --create-namespace
 kubectl get pods -n monitoring
 ```
-### Port Forward
+# Port Forward
+- 
 ```
 kubectl get svc -n monitoring
 ```
+### Nodport
 - method1
 ```
 kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
@@ -22,6 +24,45 @@ kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
 - method2
 ```
 nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-forward.log 2>&1 &
+```
+### HAProxy
+```
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: zabbix-web-ingress
+  namespace: monitoring
+spec:
+  ingressClassName: haproxy
+  rules:
+  - host: zabbix.faradis.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: zabbix-zabbix-web
+            port:
+              number: 80
+
+```
+### HAProxy Loadbalancer
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
+
 ```
 
 ### verify:
