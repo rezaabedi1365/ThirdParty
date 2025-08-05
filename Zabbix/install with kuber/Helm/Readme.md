@@ -23,6 +23,7 @@ kubectl get pods -n monitoring
 
  
 ```
+kubectl get ingress -A
 kubectl get svc -n monitoring
 kubectl get svc -A -o wide
 ```
@@ -63,6 +64,7 @@ spec:
 kubectl apply -f zabbix-ingress.yaml
 ```
 ```
+kubectl get ingress -A
 kubectl get ingress -n your-zabbix-namespace
 kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
@@ -88,6 +90,7 @@ spec:
 kubectl apply -f zabbix-ingress.yaml
 ```
 ```
+kubectl get ingress -A
 kubectl get ingress -n your-zabbix-namespace
 kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
@@ -112,6 +115,7 @@ spec:
 kubectl apply -f zabbix-ingress.yaml
 ```
 ```
+kubectl get ingress -A
 kubectl get ingress -n your-zabbix-namespace
 kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
 ```
