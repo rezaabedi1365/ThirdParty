@@ -93,6 +93,7 @@ kubectl apply -f zabbix-ingress.yaml
 ```
 ```
 kubectl get services --all-namespaces
+kubectl delete service <service-name> -n <namespace>
 ```
 <img width="924" height="140" alt="image" src="https://github.com/user-attachments/assets/fdde6600-4966-4939-b3af-0f5fd1bc9c35" />
 
@@ -116,6 +117,7 @@ spec:
 
 ```
 kubectl get services --all-namespaces
+kubectl delete service <service-name> -n <namespace>
 ```
 <img width="932" height="154" alt="image" src="https://github.com/user-attachments/assets/e9999634-5d62-48dc-8650-4a4d3e92e1c6" />
 
