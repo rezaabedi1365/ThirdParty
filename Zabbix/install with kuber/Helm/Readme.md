@@ -79,10 +79,9 @@ kind: Ingress
 metadata:
   name: zabbix-web-ingress
   namespace: monitoring
-  annotations:
-    kubernetes.io/ingress.class: "haproxy"
-    haproxy.org/ssl-certificate: "monitoring/zabbix-tls-secret"  # Secret حاوی گواهی TLS
+ 
 spec:
+  ingressClassName: haproxy   
   tls:
   - hosts:
     - zabbix.faradis.net
@@ -98,6 +97,7 @@ spec:
             name: zabbix-zabbix-web
             port:
               number: 80
+
 ```
 ```
 kubectl apply -f zabbix-ingress-TLS.yaml
