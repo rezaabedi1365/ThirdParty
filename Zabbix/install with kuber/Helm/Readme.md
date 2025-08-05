@@ -21,7 +21,7 @@ kubectl get svc -n monitoring
 ```
 kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
 ```
-- method2
+- method2 : run in background
 ```
 nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-forward.log 2>&1 &
 ```
