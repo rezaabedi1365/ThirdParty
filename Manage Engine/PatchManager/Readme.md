@@ -17,7 +17,7 @@ Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | 
 ```
 ```
 Name                           IdentifyingNumber
-----                           -----------------
+#####                          -----------------
 ManageEngine Patch Manager Plus Agent  {6AD2231F-FF48-4D59-AC26-405AFAE23DB7}
 ```
 msiexec /x {6AD2231F-FF48-4D59-AC26-405AFAE23DB7} /qn
