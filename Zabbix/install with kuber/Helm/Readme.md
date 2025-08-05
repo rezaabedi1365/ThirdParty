@@ -38,48 +38,48 @@ kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80
 nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-forward.log 2>&1 &
 ```
 ### Ingress Controller (HAProxy, NGINX)
-- for user Ingress Controller (HAProxy, NGINX) you must install it
-##### Install Ingress Controller (HAProxy)
+    - for user Ingress Controller (HAProxy, NGINX) you must install it
+    ##### Install Ingress Controller (HAProxy)
 
-```
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-helm repo add haproxy-ingress https://haproxy-ingress.github.io/charts
-helm repo update
+    ```
+    curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+    helm repo add haproxy-ingress https://haproxy-ingress.github.io/charts
+    helm repo update
 
-helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
-  --create-namespace --namespace ingress-controller
+    helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
+      --create-namespace --namespace ingress-controller
 
-```
-- Ingress Controller (HAProxy) with Loadbalancer
-```
-helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
-  --create-namespace --namespace ingress-controller \
-  --set controller.service.type=LoadBalancer
+    ```
+    - Ingress Controller (HAProxy) with Loadbalancer
+    ```
+    helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
+      --create-namespace --namespace ingress-controller \
+      --set controller.service.type=LoadBalancer
 
-```
-- Ingress Controller (HAProxy) with Nodeport
-```
-helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
-  --create-namespace --namespace ingress-controller \
-  --set controller.service.type=NodePort \
-  --set controller.service.nodePorts.http=30080 \
-  --set controller.service.nodePorts.https=30443
-```
-- if you want use 80 , 443
-```
-helm upgrade --install haproxy-ingress haproxytech/kubernetes-ingress --namespace ingress \
-  --set controller.service.nodePorts.http=80 \
-  --set controller.service.nodePorts.https=443
+    ```
+    - Ingress Controller (HAProxy) with Nodeport
+    ```
+    helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
+      --create-namespace --namespace ingress-controller \
+      --set controller.service.type=NodePort \
+      --set controller.service.nodePorts.http=30080 \
+      --set controller.service.nodePorts.https=30443
+    ```
+    - if you want use 80 , 443
+    ```
+    helm upgrade --install haproxy-ingress haproxytech/kubernetes-ingress --namespace ingress \
+      --set controller.service.nodePorts.http=80 \
+      --set controller.service.nodePorts.https=443
 
-```
-verfy:
-```
-kubectl get svc --all-namespaces | grep haproxy
-kubectl get pods --all-namespaces | grep haproxy
-```
-<img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
+    ```
+    verfy:
+    ```
+    kubectl get svc --all-namespaces | grep haproxy
+    kubectl get pods --all-namespaces | grep haproxy
+    ```
+    <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
 
-<img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/d7c254be-da63-4f66-ba22-529628b259db" />
+    <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/d7c254be-da63-4f66-ba22-529628b259db" />
 
 -------------------------------------------------------------------------------------------------------------------------
 ```
