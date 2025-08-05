@@ -10,6 +10,15 @@ download agent and share it for everyone
 msiexec /i "\\ServerPath\UEMSAgent.msi" /qn TRANSFORMS="UEMSAgent.mst" ENABLESILENT=yes REBOOT=ReallySuppress INSTALLSOURCE=Manual SERVER_ROOT_CRT="%cd%\DMRootCA-Server.crt" DS_ROOT_CRT="%cd%\DMRootCA.crt" /l*v "C:\Agentinstalllog.txt
 ```
 #### uninstall
+show Product Code
+```
+Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | Select-Object Name, IdentifyingNumber
+```
+```
+```
+Name                           IdentifyingNumber
+----                           -----------------
+ManageEngine Patch Manager Plus Agent  {6AD2231F-FF48-4D59-AC26-405AFAE23DB7}
 ```
 msiexec /x {6AD2231F-FF48-4D59-AC26-405AFAE23DB7} /qn
 ```
