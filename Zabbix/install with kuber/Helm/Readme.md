@@ -69,8 +69,8 @@ helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
 helm upgrade --install haproxy-ingress haproxytech/kubernetes-ingress --namespace ingress \
 --set controller.service.nodePorts.http=80 \
 --set controller.service.nodePorts.https=443
-
 ```
+
 verfy:
 ```
 kubectl get svc --all-namespaces | grep haproxy
@@ -78,6 +78,7 @@ kubectl get pods --all-namespaces | grep haproxy
 ```
     
 <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
+
 <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/d7c254be-da63-4f66-ba22-529628b259db" />
 
 
