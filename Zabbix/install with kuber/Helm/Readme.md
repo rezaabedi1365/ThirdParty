@@ -40,6 +40,7 @@ nohup kubectl port-forward svc/zabbix-zabbix-web -n monitoring 8080:80 > port-fo
 ### Ingress Controller (HAProxy, NGINX)
 - for user Ingress Controller (HAProxy, NGINX) you must install it
 ##### Install Ingress Controller (HAProxy)
+<img width="758" height="270" alt="image" src="https://github.com/user-attachments/assets/15ec9e5d-7eaf-4ec8-b65e-da6ce2de6720" />
 
 ```
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
@@ -80,7 +81,8 @@ kubectl get pods --all-namespaces | grep haproxy
 
 <img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/a5bcc535-1cbb-4e00-982d-d798c112f421" />
 
-<img width="1044" height="49" alt="image" src="https://github.com/user-attachments/assets/d7c254be-da63-4f66-ba22-529628b259db" />
+<img width="859" height="47" alt="image" src="https://github.com/user-attachments/assets/fdf2dd39-01ef-4983-821e-ea2e9f5d360d" />
+
 
 
 ```
