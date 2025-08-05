@@ -1,4 +1,4 @@
-### install with Helm
+# install with Helm
 ```
 helm search repo zabbix-community
 ```
@@ -12,7 +12,16 @@ helm install zabbix zabbix-community/zabbix --namespace monitoring --create-name
 kubectl get pods -n monitoring
 ```
 # Port Forward
-- 
+- Temporarly
+  * kubectl port-forward
+  * Kftray (Graphicy)
+- Permanently
+  * Ingress Controller (HAProxy, NGINX)
+  * Kubernetes Service (NodePort, LoadBalancer)
+  * iptables
+  * NGINX Reverse Proxy (میتواند جزو Ingress یا جداگانه باشد)
+
+ 
 ```
 kubectl get svc -n monitoring
 ```
