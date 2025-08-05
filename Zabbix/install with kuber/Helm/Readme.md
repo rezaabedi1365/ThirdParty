@@ -64,6 +64,12 @@ helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
   --set controller.service.type=NodePort \
   --set controller.service.nodePorts.http=30080 \
   --set controller.service.nodePorts.https=30443
+```
+- if you want use 80 , 443
+```
+helm upgrade --install haproxy-ingress haproxytech/kubernetes-ingress --namespace ingress \
+  --set controller.service.nodePorts.http=80 \
+  --set controller.service.nodePorts.https=443
 
 ```
 verfy:
