@@ -50,14 +50,14 @@ helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
   --create-namespace --namespace ingress-controller
 
 ```
-- ngress Controller (HAProxy) with Loadbalancer
+- Ingress Controller (HAProxy) with Loadbalancer
 ```
 helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
   --create-namespace --namespace ingress-controller \
   --set controller.service.type=LoadBalancer
 
 ```
-- ngress Controller (HAProxy) with Nodeport
+- Ingress Controller (HAProxy) with Nodeport
 ```
 helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
   --create-namespace --namespace ingress-controller \
