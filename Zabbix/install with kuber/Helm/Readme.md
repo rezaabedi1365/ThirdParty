@@ -102,6 +102,14 @@ spec:
 ```
 kubectl apply -f zabbix-ingress-TLS.yaml
 ```
+```
+kubectl get ingress -A
+kubectl get ingress -n your-zabbix-namespace
+kubectl describe ingress <ingress-name> -n <namespace>
+kubectl delete ingress zabbix-web-ingress -n your-zabbix-namespace
+```
+<img width="758" height="47" alt="image" src="https://github.com/user-attachments/assets/11b79b8d-cdc7-4fde-bba8-662519343e18" />
+
 ### Kubernetes Service (NodePort)
 ```
 apiVersion: v1
