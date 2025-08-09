@@ -34,14 +34,18 @@ docker compose up -d
 
 ### Admin Reset Password
 ```
-docker exec -it netbox-docker-netbox-1 bash
-python3 /opt/netbox/netbox/manage.py shell
+docker exec -it netbox-docker-netbox-1 python3 /opt/netbox/netbox/manage.py changepassword admin
+```
+- show user list
+```
+docker exec -it netbox-docker-netbox-1 bash python3 /opt/netbox/netbox/manage.py shell
 ```
 ```
-from django.contrib.auth.models import User
-user = User.objects.get(username='admin')
-user.set_password('newpassword123')
-user.save()
-exit()
+from users.models import User
+User.objects.all()
+```
+### Create New User
+```
+docker exec -it netbox-docker-netbox-1 python3 /opt/netbox/netbox/manage.py createsuperuser
 ```
 
