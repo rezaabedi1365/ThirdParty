@@ -23,6 +23,19 @@ services:
     ports:
       - "8000:8080"
 ```
+- for auto start after host restart
+```
+services:
+  netbox:
+    restart: unless-stopped
+  postgres:
+    restart: unless-stopped
+  redis:
+    restart: unless-stopped
+  redis-cache:
+    restart: unless-stopped
+
+```
 
 ```
 docker compose pull
