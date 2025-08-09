@@ -16,15 +16,12 @@ sudo systemctl start docker
 git clone https://github.com/netbox-community/netbox-docker.git
 cd netbox-docker
 ```
+- create file docker-compose.override.yml
 ```
 services:
   netbox:
     ports:
       - "8000:8080"
-```
-
-```
-cp env.example .env
 ```
 
 ```
