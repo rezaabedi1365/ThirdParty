@@ -36,6 +36,20 @@ services:
     restart: unless-stopped
 
 ```
+- Merg
+```
+services:
+  netbox:
+    ports:
+      - "8000:8080"
+    restart: unless-stopped
+  postgres:
+    restart: unless-stopped
+  redis:
+    restart: unless-stopped
+  redis-cache:
+    restart: unless-stopped
+```
 
 ```
 docker compose pull
