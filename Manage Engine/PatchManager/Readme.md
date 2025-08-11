@@ -24,9 +24,10 @@ Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | 
 msiexec /x {6AD2231F-FF48-4D59-AC26-405AFAE23DB7} /qn
 ```
 # Ports
-- Client to server
+- Https Agents to Distribution server
     * 8027,8383 agent to server
+- Https Agents to server 
     * 8084 agent to Distribution server
 
 - distribution server to server
-    * 8027,8384 Distribution server to server
+    * 8020,8027,8384 Distribution server to server
