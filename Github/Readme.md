@@ -1,8 +1,8 @@
 ```
 command
 ```
-- :heavy_check_mark: test
+- :heavy_check_mark: 
 - :x:
 - :red_circle:
 - :small_red_triangle:
-- small_red_triangle_down:
+- :small_red_triangle_down:
