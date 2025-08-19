@@ -9,7 +9,29 @@ download agent and share it for everyone
 ```
 msiexec /i "\\ServerPath\UEMSAgent.msi" /qn TRANSFORMS="UEMSAgent.mst" ENABLESILENT=yes REBOOT=ReallySuppress INSTALLSOURCE=Manual SERVER_ROOT_CRT="%cd%\DMRootCA-Server.crt" DS_ROOT_CRT="%cd%\DMRootCA.crt" /l*v "C:\Agentinstalllog.txt
 ```
+- batch file
+```
+@echo off
+setlocal
 
+set "Source=\\file\Softbank\EndPointCentral\faradis-agent\msi"
+set "TempPath=%TEMP%\EndPointCentral"
+
+xcopy "%Source%" "%TempPath%" /E /I /Y /H
+
+
+
+set "MsiPath=%TempPath%\UEMSAgent.msi"
+set "MstPath=%TempPath%\UEMSAgent.mst"
+set "LogPath=C:\Agentinstalllog.txt"
+
+msiexec /i "%MsiPath%" /qn TRANSFORMS="%MstPath%" ENABLESILENT=yes REBOOT=ReallySuppress INSTALLSOURCE=Manual SERVER_ROOT_CRT="%cd%\DMRootCA-Server.crt" DS_ROOT_CRT="%cd%\DMRootCA.crt" /l*v "%LogPath%"
+
+
+rmdir /s /q "%TempPath%"
+
+endlocal
+```
 
 # uninstall
 show Product Code
