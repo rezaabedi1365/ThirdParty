@@ -5,7 +5,7 @@
    * pgdata (Main Database)
  
  ---------------------------------------------------------------------------------------------------
- ## Export and Import Database
+ ## Method1) Export and Import Database
 - remove password in config file and after that
  * cd C:\Program Files\ManageEngine\PAM360\pgsql
 ```
@@ -26,4 +26,11 @@ pg_dump -U postgres -p 3456 -F c -b -v -f "D:\pam360_backup.dump" PAM360
 ```
 pg_restore -U postgres -p 3456 -d PAM60 -v "D:\pam360_backup.dump"
 ```
-  
+ ## Method2) Export record file (not Recomend)
+
+```
+COPY (SELECT * FROM AAAMSP_CREDENTIALS) TO '/tmp/credentials_backup.csv' WITH CSV HEADER;
+COPY (SELECT * FROM AAAMSP_RESOURCES) TO '/tmp/resources_backup.csv' WITH CSV HEADER;
+COPY (SELECT * FROM AAAMSP_FOLDER) TO '/tmp/folder_backup.csv' WITH CSV HEADER;
+```
+
