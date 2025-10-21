@@ -1,4 +1,5 @@
 Server Domain Name
+    Setup → Domain Manager
 
 Host Name
 
