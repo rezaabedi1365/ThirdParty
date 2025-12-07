@@ -45,10 +45,15 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 
 
 ### Authentication Setting:
-![image](https://github.com/user-attachments/assets/fd2a36f2-db2c-49de-8b8b-1024f8463366)
+<img width="977" height="633" alt="image" src="https://github.com/user-attachments/assets/af838885-4e86-4716-9473-198969df604a" />
 
 ### Synchronization Setting :
-![image](https://github.com/user-attachments/assets/4d1d9b51-bb8d-4d19-9a32-c138368e442d)
+- Schedule Synchronization
+<img width="972" height="470" alt="image" src="https://github.com/user-attachments/assets/85a5a2aa-fe4d-4f00-b847-bab53af125e2" />
+
+- Manual Synchronization
+<img width="969" height="624" alt="image" src="https://github.com/user-attachments/assets/10c6447c-763a-4d65-8aa3-41947bc31d4c" />
+
 
 ### Right to left Email Format
 ```
