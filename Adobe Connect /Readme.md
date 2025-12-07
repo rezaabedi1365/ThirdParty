@@ -54,6 +54,9 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 - Manual Synchronization
 <img width="969" height="624" alt="image" src="https://github.com/user-attachments/assets/10c6447c-763a-4d65-8aa3-41947bc31d4c" />
 
+- Synchronization log
+<img width="977" height="607" alt="image" src="https://github.com/user-attachments/assets/0a020d7f-d1a3-4657-a325-0ff5be359908" />
+
 
 ### Right to left Email Format
 ```
