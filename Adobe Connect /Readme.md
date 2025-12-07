@@ -18,6 +18,7 @@ https://helpx.adobe.com/adobe-connect/adobe-connect-11-tech-specs.html
 Server Setting :
 <img width="976" height="502" alt="image" src="https://github.com/user-attachments/assets/53b51503-d095-49ba-b053-58af68ca04d9" />
 
+<img width="979" height="499" alt="image" src="https://github.com/user-attachments/assets/05d0b114-effa-4fb2-85e8-4650c59810f8" />
 
 
 # How to install an SSL certificate on Adobe Connect?
