@@ -61,14 +61,23 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 ### Right to left Email Format
 ```
 <div style="direction: rtl; text-align: right; font-family: Tahoma, sans-serif; line-height: 1.8;">
-همکار محترم<br><br>
-کلاسی تحت عنوان "<strong>مدیریت</strong>" برای شما با مشخصات زیر در نظر گرفته شده است.  
-در زمان مقرر از طریق لینک ذیل در کلاس حضور به‌عمل آورید.<br><br>
-<strong>زمان:</strong> {meeting-time}<br>
-<strong>لینک ورود به کلاس:</strong><br>
-{meeting-url}<br><br>
+همکار محترم<br>
+باسلام<br>
+احتراما دوره ای تحت عنوان "<strong>مهارت های اصول سرپرستی</strong>" برای شما با مشخصات زیر در نظر گرفته شده است.  
+خواهشمند است در زمان مقرر از طریق لینک ذیل در کلاس حضور بعمل آورید.<br>
 
-مدیریت سرمایه‌های انسانی
+<strong>زمان:</strong> دوشنبه 17 آذر ماه ساعت 09:00<br>
+<strong>لینک ورود به کلاس:</strong><br>
+https://elearning.faradis.net/pre/<br>
+
+<div style="border: 1px solid #999; padding: 10px; border-radius: 6px; background-color: #f7f7f7; margin-top: 10px;">
+<strong>راهنما:</strong><br>
+ابتدا نرم‌افزار <strong>Adobe Connect</strong> را نصب نمایید.<br>
+سپس لینک ورود به کلاس را در نرم‌افزار کپی کنید.<br>
+در ادامه با استفاده از تب <strong>Registered User</strong> نام کاربری و کلمه عبور دامنه فرادیس خود را وارد نمایید و وارد کلاس شوید.
+</div>
+
+با تشکر – عباسی
 </div>
 
 ```
