@@ -45,3 +45,17 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 ### Synchronization Setting :
 ![image](https://github.com/user-attachments/assets/4d1d9b51-bb8d-4d19-9a32-c138368e442d)
 
+### Right to left Email Format
+```
+<div style="direction: rtl; text-align: right; font-family: Tahoma, sans-serif; line-height: 1.8;">
+همکار محترم<br><br>
+کلاسی تحت عنوان "<strong>مدیریت</strong>" برای شما با مشخصات زیر در نظر گرفته شده است.  
+در زمان مقرر از طریق لینک ذیل در کلاس حضور به‌عمل آورید.<br><br>
+<strong>زمان:</strong> {meeting-time}<br>
+<strong>لینک ورود به کلاس:</strong><br>
+{meeting-url}<br><br>
+
+مدیریت سرمایه‌های انسانی
+</div>
+
+```
