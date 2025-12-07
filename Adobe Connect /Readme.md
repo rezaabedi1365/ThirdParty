@@ -41,9 +41,8 @@ key = C:\Connect\stunnel\certs\private_key_app-server.key
 
 
 ### Group Profile Mapping :
-![image](https://github.com/user-attachments/assets/94833e45-2692-4de1-b996-b2b859a884b9)
+<img width="973" height="649" alt="image" src="https://github.com/user-attachments/assets/e65e2d2e-edf8-46ce-8c02-5b3ceeca9937" />
 
-<img width="978" height="632" alt="image" src="https://github.com/user-attachments/assets/add27f98-3c7a-4dcf-805d-fc9068f0b4b9" />
 
 ### Authentication Setting:
 ![image](https://github.com/user-attachments/assets/fd2a36f2-db2c-49de-8b8b-1024f8463366)
