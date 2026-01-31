@@ -1,6 +1,6 @@
 # Server
-### Server Consol
-###### setting 
+### 1-Server Consol
+#### setting 
 ```
 Update
    Update Interval: Regular interval 6 Hours
@@ -15,7 +15,7 @@ Advanced Setting
    LOGGING: Trace , JSON
    DATABASE CLEAN UP
 ```
-###### Policy
+#### Policy
 HTTP Proxy usage
 ```
 Depricated
