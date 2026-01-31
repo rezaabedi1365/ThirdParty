@@ -16,12 +16,21 @@ Advanced Setting
    DATABASE CLEAN UP
 ```
 ###### Policy
-- HTTP Proxy usage : Depricated
-- Eset Bridge :
-- Console Policy :
-        * Update : Myprofile
-            + Module updates : Choose automatically
-            + Custeom Server :  
+HTTP Proxy usage
+```
+Depricated
+```
+Eset Bridge :
+```
+Console Policy :
+```
+Update : Myprofile
+   Module updates : Choose automatically
+   Custeom Server :  
+Connectivity:
+```
+
+Client and server Policy :
+```
         * Connectivity: 
-4- Client and server Policy :
-        * Connectivity: 
+```
