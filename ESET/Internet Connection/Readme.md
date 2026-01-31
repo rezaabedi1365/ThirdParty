@@ -20,8 +20,12 @@ HTTP Proxy usage
 ```
 Depricated
 ```
+
 Eset Bridge :
 ```
+```
+
+
 Console Policy :
 ```
 Update : Myprofile
@@ -29,6 +33,8 @@ Update : Myprofile
    Custeom Server :  
 Connectivity:
 ```
+
+
 
 Client and server Policy :
 ```
