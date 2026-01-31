@@ -1,6 +1,7 @@
 # Server
 ### Server Consol
 ###### setting 
+```
 Update
    Update Interval: Regular interval 6 Hours
    Update Server: AUTOSELECT | UPSTREEAM ADDRESS
@@ -13,6 +14,7 @@ Advanced Setting
    REPOSITORY: AUTOSELECT
    LOGGING: Trace , JSON
    DATABASE CLEAN UP
+```
 ###### Policy
 - HTTP Proxy usage : Depricated
 - Eset Bridge :
