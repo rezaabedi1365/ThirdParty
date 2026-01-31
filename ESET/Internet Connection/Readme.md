@@ -1,6 +1,6 @@
 # Server
 ### Server Consol
-- setting 
+###### setting 
     * Update
         + Update Interval: Regular interval 6 Hours
         + Update Server: AUTOSELECT | UPSTREEAM ADDRESS
@@ -13,10 +13,10 @@
         + REPOSITORY: AUTOSELECT
         + LOGGING: Trace , JSON
         + DATABASE CLEAN UP
-- Policy
-1- HTTP Proxy usage : Depricated
-2- Eset Bridge :
-3- Console Policy :
+###### Policy
+- HTTP Proxy usage : Depricated
+- Eset Bridge :
+- Console Policy :
         * Update : Myprofile
             + Module updates : Choose automatically
             + Custeom Server :  
