@@ -14,12 +14,12 @@
         * LOGGING: Trace , JSON
         * DATABASE CLEAN UP
 - Policy
-1-HTTP Proxy usage : Depricated
-2-Eset Bridge :
-3-Console Policy :
+1- HTTP Proxy usage : Depricated
+2- Eset Bridge :
+3- Console Policy :
         * Update : Myprofile
             + Module updates : Choose automatically
             + Custeom Server :  
         * Connectivity: 
-4-Client and server Policy :
+4- Client and server Policy :
         * Connectivity: 
