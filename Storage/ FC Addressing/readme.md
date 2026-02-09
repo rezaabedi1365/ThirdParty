@@ -15,13 +15,13 @@ Get-InitiatorPort
            
   - FCoE SAN [ For Short Distance ]
   
-  - IP SAN
+  - IP SAN (iSCSI )
       * NIC Card
       * copper 
       * address  
-          +  iSCSI address
-             -  iSCSI Initiator [IQN (iSCSI Qualified Name) iqn.YYYY-MM.com.vendor:unique_name]
-             -  iSCSI Target 
+          + iSCSI Target [target discover ip:3260]
+             -  iSCSI Initiators [IQN (iSCSI Qualified Name) iqn.YYYY-MM.com.vendor:unique_name]
+
   - FCIP [For Long Distance and use in WAN]
 -----------------------------------------------------------------------
 # SAN Switch Zonning
