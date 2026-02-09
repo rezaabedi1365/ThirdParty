@@ -3,14 +3,22 @@ https://techtik.com/2017/06/13/fc-addressing/
 
 ### SAN Protocols
   - FC SAN
-      * WWNN [World Wide Node Name]:  Specify address for Node (Device)
-      * WWPN [World Wide Port Name]:  Specify address for each ports
+      * HBA Card
+      * Media Fiber
+      * address    
+          + WWNN [World Wide Node Name]:  Specify address for Node (Device)
+          + WWPN [World Wide Port Name]:  Specify address for each ports
+            
   - FCoE SAN [ For Short Distance ]
+  
   - IP SAN
-      * iSCSI
-          +  iSCSI Initiator
-          +  iSCSI Target 
-      * FCIP [For Long Distance and use in WAN]
+      * NIC Card
+      * copper 
+      * address  
+          +  iSCSI address
+             -  iSCSI Initiator [IQN (iSCSI Qualified Name) iqn.YYYY-MM.com.vendor:unique_name]
+             -  iSCSI Target 
+  - FCIP [For Long Distance and use in WAN]
 -----------------------------------------------------------------------
 # SAN Switch Zonning
 
