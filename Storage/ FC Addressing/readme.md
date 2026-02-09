@@ -12,6 +12,7 @@ https://techtik.com/2017/06/13/fc-addressing/
 Get-InitiatorPort
 ```
 <img width="949" height="318" alt="image" src="https://github.com/user-attachments/assets/2a6d53ad-bb68-458d-b9db-da58f055beb7" />
+<img width="915" height="236" alt="image" src="https://github.com/user-attachments/assets/53ad782e-d39a-4446-b4a6-d81c66774161" />
            
   - FCoE SAN [ For Short Distance ]
   
