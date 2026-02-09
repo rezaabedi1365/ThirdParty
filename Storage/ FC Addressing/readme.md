@@ -8,7 +8,7 @@ https://techtik.com/2017/06/13/fc-addressing/
       * address    
           + WWNN [World Wide Node Name]:  Specify address for Node (Device)
           + WWPN [World Wide Port Name]:  Specify address for each ports
-```
+```powershell
 Get-InitiatorPort
 ```            
   - FCoE SAN [ For Short Distance ]
