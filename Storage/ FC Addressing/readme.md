@@ -10,7 +10,9 @@ https://techtik.com/2017/06/13/fc-addressing/
           + WWPN [World Wide Port Name]:  Specify address for each ports
 ```powershell
 Get-InitiatorPort
-```            
+```
+<img width="949" height="318" alt="image" src="https://github.com/user-attachments/assets/2a6d53ad-bb68-458d-b9db-da58f055beb7" />
+           
   - FCoE SAN [ For Short Distance ]
   
   - IP SAN
